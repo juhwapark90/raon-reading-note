@@ -5,17 +5,14 @@ import { useProfile } from './hooks/useProfile';
 import { useAutoReload } from './hooks/useAutoReload';
 import { countTotalProgress, todayStr } from './lib/progressUtils';
 import Sidebar from './components/Sidebar';
-import ProgressHero from './components/ProgressHero';
+import AppHeader from './components/AppHeader';
 import SeriesView from './components/SeriesView';
 import RequiredReadingView from './components/RequiredReadingView';
 import MiscView from './components/MiscView';
 import ApprovalsView from './components/ApprovalsView';
 import HomeView from './components/HomeView';
-import ShopView from './components/ShopView';
-import CharacterShopView from './components/CharacterShopView';
-import SyncPanel from './components/SyncPanel';
+import ShopHubView from './components/ShopHubView';
 import ProfileGate from './components/ProfileGate';
-import ProfileBadge from './components/ProfileBadge';
 import Toast from './components/Toast';
 import './App.css';
 
@@ -42,7 +39,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [toastMsg, setToastMsg] = useState('');
 
-  const { total, read } = useMemo(() => countTotalProgress(catalog, data), [data]);
+  const { read } = useMemo(() => countTotalProgress(catalog, data), [data]);
 
   function celebrate(pool = CHEERS) {
     const msg = pool[Math.floor(Math.random() * pool.length)];
@@ -212,21 +209,24 @@ export default function App() {
         onClose={() => setSidebarOpen(false)}
       />
       <main className="app-main">
-        <div className="app-topbar">
-          <ProgressHero total={total} read={read} onMenuClick={() => setSidebarOpen(true)} />
-          <div className="app-topbar__right">
-            <ProfileBadge profile={profile} onSelect={selectProfile} />
-            <SyncPanel
-              syncStatus={syncStatus}
-              roomCode={roomCode}
-              onJoin={joinRoom}
-              onLeave={leaveRoom}
-            />
-          </div>
-        </div>
+        <AppHeader
+          onMenuClick={() => setSidebarOpen(true)}
+          profile={profile}
+          onSelectProfile={selectProfile}
+          syncStatus={syncStatus}
+          roomCode={roomCode}
+          onJoin={joinRoom}
+          onLeave={leaveRoom}
+        />
 
         {activeKey === 'home' && (
-          <HomeView catalog={catalog} progress={data} isChild={isChild} onNavigate={setActiveKey} />
+          <HomeView
+            catalog={catalog}
+            progress={data}
+            isChild={isChild}
+            totalRead={read}
+            onNavigate={setActiveKey}
+          />
         )}
 
         {activeKey === 'approvals' && (
@@ -241,23 +241,15 @@ export default function App() {
         )}
 
         {activeKey === 'shop' && (
-          <ShopView
+          <ShopHubView
             catalog={catalog}
             progress={data}
             isChild={isChild}
-            onBuy={buyCoupon}
+            onBuyCoupon={buyCoupon}
             onMarkShared={markPurchaseShared}
-          />
-        )}
-
-        {activeKey === 'character-shop' && (
-          <CharacterShopView
-            catalog={catalog}
-            progress={data}
-            isChild={isChild}
-            onBuy={buyCharacterItem}
-            onEquip={equipCharacterItem}
-            onUnequip={unequipCharacterSlot}
+            onBuyCharacter={buyCharacterItem}
+            onEquipCharacter={equipCharacterItem}
+            onUnequipCharacter={unequipCharacterSlot}
           />
         )}
 

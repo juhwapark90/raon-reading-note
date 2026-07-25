@@ -67,8 +67,6 @@ export function countTotalProgress(catalog, progress) {
   return { total, read };
 }
 
-export const MILESTONES = [10, 30, 60, 100, 150, 200, 300, 400, 500, 600];
-
 export const POINTS_PER_BOOK = 10;
 
 // Points are always derived from what's actually confirmed-read right now,

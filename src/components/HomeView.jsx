@@ -1,15 +1,8 @@
-import {
-  countMiscProgress,
-  countSeriesProgress,
-  pendingCount,
-  totalPointsEarned,
-  walletBalance,
-} from '../lib/progressUtils';
+import { countMiscProgress, countSeriesProgress, pendingCount, walletBalance } from '../lib/progressUtils';
 import ProgressBar from './ProgressBar';
 import CharacterView from './CharacterView';
 
-export default function HomeView({ catalog, progress, isChild, onNavigate }) {
-  const points = totalPointsEarned(catalog, progress);
+export default function HomeView({ catalog, progress, isChild, totalRead, onNavigate }) {
   const balance = walletBalance(catalog, progress);
   const pending = pendingCount(catalog, progress);
 
@@ -28,12 +21,6 @@ export default function HomeView({ catalog, progress, isChild, onNavigate }) {
 
   return (
     <section className="section-view">
-      <header className="section-view__header">
-        <h2>
-          <span className="section-view__emoji">🏠</span> 오늘의 독서 현황
-        </h2>
-      </header>
-
       {pending > 0 && (
         <button className="pending-banner" onClick={() => onNavigate('approvals')}>
           <span className="pending-banner__icon">🔔</span>
@@ -45,27 +32,16 @@ export default function HomeView({ catalog, progress, isChild, onNavigate }) {
         </button>
       )}
 
-      <div className="home-stats">
-        <div className="home-stat-card">
-          <div className="home-stat-card__label">모은 포인트</div>
-          <div className="home-stat-card__value">{points}P</div>
+      <div className="home-hero">
+        <CharacterView equipped={progress.character?.equipped} size={140} />
+        <div className="home-hero__text">
+          지금까지 총 <span className="home-hero__count">{totalRead}</span>권의 책을 읽었어요.
         </div>
-        <div className="home-stat-card">
-          <div className="home-stat-card__label">쓸 수 있는 포인트</div>
-          <div className="home-stat-card__value">{balance}P</div>
-        </div>
-        <button className="home-stat-card home-stat-card--action" onClick={() => onNavigate('shop')}>
-          <div className="home-stat-card__label">용돈 쿠폰 받으러 가기</div>
-          <div className="home-stat-card__value">🛍️ 상점</div>
-        </button>
-        <button
-          className="home-stat-card home-stat-card--action home-stat-card--character"
-          onClick={() => onNavigate('character-shop')}
-        >
-          <CharacterView equipped={progress.character?.equipped} size={56} />
-          <div className="home-stat-card__label">캐릭터 꾸미기</div>
-        </button>
       </div>
+
+      <button className="home-point-btn" onClick={() => onNavigate('shop')}>
+        💰 {balance}P
+      </button>
 
       <h3 className="home-section-title">시리즈별 진행률</h3>
       <div className="home-grid">
