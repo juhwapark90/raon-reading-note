@@ -42,6 +42,27 @@ export function countTotalProgress(catalog, progress) {
 
 export const MILESTONES = [10, 30, 60, 100, 150, 200, 300, 400, 500, 600];
 
+export const POINTS_PER_BOOK = 10;
+
+// Points are always derived from what's actually checked/logged right now,
+// never a manually-incremented counter - so toggling a book off removes the
+// points it granted, and there's no way to farm points by re-checking books.
+export function totalBooksCompleted(catalog, progress) {
+  return countTotalProgress(catalog, progress).read + (progress.freeReading?.length || 0);
+}
+
+export function totalPointsEarned(catalog, progress) {
+  return totalBooksCompleted(catalog, progress) * POINTS_PER_BOOK;
+}
+
+export function pointsSpent(progress) {
+  return (progress.purchases || []).reduce((sum, p) => sum + (p.price || 0), 0);
+}
+
+export function walletBalance(catalog, progress) {
+  return totalPointsEarned(catalog, progress) - pointsSpent(progress);
+}
+
 export function todayStr() {
   const d = new Date();
   const pad = (n) => String(n).padStart(2, '0');

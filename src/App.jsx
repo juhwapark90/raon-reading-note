@@ -7,6 +7,8 @@ import ProgressHero from './components/ProgressHero';
 import SeriesView from './components/SeriesView';
 import RequiredReadingView from './components/RequiredReadingView';
 import FreeReadingView from './components/FreeReadingView';
+import HomeView from './components/HomeView';
+import ShopView from './components/ShopView';
 import SyncPanel from './components/SyncPanel';
 import Toast from './components/Toast';
 import './App.css';
@@ -23,7 +25,7 @@ let cheerTimer = null;
 
 export default function App() {
   const { data, update, syncStatus, roomCode, joinRoom, leaveRoom } = useProgress();
-  const [activeKey, setActiveKey] = useState(catalog.requiredReading.key);
+  const [activeKey, setActiveKey] = useState('home');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [toastMsg, setToastMsg] = useState('');
 
@@ -87,6 +89,23 @@ export default function App() {
     }));
   }
 
+  function buyCoupon(purchase) {
+    update((prev) => ({
+      ...prev,
+      purchases: [...(prev.purchases || []), purchase],
+    }));
+    celebrate();
+  }
+
+  function markPurchaseShared(purchaseId) {
+    update((prev) => ({
+      ...prev,
+      purchases: (prev.purchases || []).map((p) =>
+        p.id === purchaseId ? { ...p, shared: true } : p
+      ),
+    }));
+  }
+
   const activeSeries = catalog.series.find((s) => s.key === activeKey);
 
   return (
@@ -110,6 +129,19 @@ export default function App() {
             onLeave={leaveRoom}
           />
         </div>
+
+        {activeKey === 'home' && (
+          <HomeView catalog={catalog} progress={data} onNavigate={setActiveKey} />
+        )}
+
+        {activeKey === 'shop' && (
+          <ShopView
+            catalog={catalog}
+            progress={data}
+            onBuy={buyCoupon}
+            onMarkShared={markPurchaseShared}
+          />
+        )}
 
         {activeKey === catalog.requiredReading.key && (
           <RequiredReadingView
