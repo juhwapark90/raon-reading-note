@@ -38,7 +38,7 @@ export default function CharacterShopView({ catalog, progress, isChild, onBuy, o
         ))}
       </div>
 
-      {equipped[activeSlot] && (
+      {activeSlot !== 'face' && equipped[activeSlot] && (
         <button className="character-shop__unequip" onClick={() => onUnequip(activeSlot)}>
           현재 착용 아이템 벗기
         </button>

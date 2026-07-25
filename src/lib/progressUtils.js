@@ -1,3 +1,5 @@
+import { DEFAULT_FACE_ID } from '../data/characterItems';
+
 export function getBookState(progress, bookId) {
   return (progress.books && progress.books[bookId]) || null;
 }
@@ -92,6 +94,7 @@ export function pointsSpent(progress) {
 }
 
 export function isCharacterItemOwned(progress, itemId) {
+  if (itemId === DEFAULT_FACE_ID) return true;
   return Boolean(progress.character?.owned?.[itemId]);
 }
 

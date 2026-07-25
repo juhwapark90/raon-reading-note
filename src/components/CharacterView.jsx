@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
-import baseImg from '../assets/character/base.png';
-import { CHARACTER_ITEMS } from '../data/characterItems';
+import { CHARACTER_ITEMS, DEFAULT_FACE_ID } from '../data/characterItems';
 
 const ASSET_MODULES = import.meta.glob('../assets/character/*.png', { eager: true, import: 'default' });
 
@@ -9,8 +8,9 @@ function assetUrl(file) {
   return match ? match[1] : null;
 }
 
-// Render order matters: later layers draw on top of earlier ones.
-const LAYER_ORDER = ['bottom', 'shoes', 'top', 'earrings', 'hair', 'hat'];
+// "face" is the base layer (skin tone + eyes); the rest stack on top of it
+// in this order, later layers drawing over earlier ones.
+const LAYER_ORDER = ['face', 'bottom', 'shoes', 'top', 'earrings', 'hair', 'hat'];
 
 async function loadImage(src) {
   const img = new Image();
@@ -22,14 +22,11 @@ async function loadImage(src) {
 export default function CharacterView({ equipped, size = 128 }) {
   const canvasRef = useRef(null);
 
-  const layerSrcs = [
-    baseImg,
-    ...LAYER_ORDER.map((slot) => equipped?.[slot])
-      .filter(Boolean)
-      .map((itemId) => CHARACTER_ITEMS.find((i) => i.id === itemId))
-      .filter(Boolean)
-      .map((item) => assetUrl(item.file)),
-  ];
+  const layerSrcs = LAYER_ORDER.map((slot) => (slot === 'face' ? equipped?.face || DEFAULT_FACE_ID : equipped?.[slot]))
+    .filter(Boolean)
+    .map((itemId) => CHARACTER_ITEMS.find((i) => i.id === itemId))
+    .filter(Boolean)
+    .map((item) => assetUrl(item.file));
 
   useEffect(() => {
     let cancelled = false;
