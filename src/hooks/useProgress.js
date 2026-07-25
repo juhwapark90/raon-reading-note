@@ -6,7 +6,7 @@ const LOCAL_KEY = 'raon-reading-progress-v1';
 const ROOM_KEY = 'raon-reading-room-code';
 
 function emptyData() {
-  return { books: {}, freeReading: [], purchases: [], updatedAt: 0 };
+  return { books: {}, miscBooks: [], purchases: [], updatedAt: 0 };
 }
 
 function loadLocal() {

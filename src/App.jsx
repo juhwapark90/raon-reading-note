@@ -1,15 +1,19 @@
 import { useMemo, useState } from 'react';
 import catalog from './data/catalog.json';
 import { useProgress } from './hooks/useProgress';
+import { useProfile } from './hooks/useProfile';
 import { countTotalProgress, todayStr } from './lib/progressUtils';
 import Sidebar from './components/Sidebar';
 import ProgressHero from './components/ProgressHero';
 import SeriesView from './components/SeriesView';
 import RequiredReadingView from './components/RequiredReadingView';
-import FreeReadingView from './components/FreeReadingView';
+import MiscView from './components/MiscView';
+import ApprovalsView from './components/ApprovalsView';
 import HomeView from './components/HomeView';
 import ShopView from './components/ShopView';
 import SyncPanel from './components/SyncPanel';
+import ProfileGate from './components/ProfileGate';
+import ProfileBadge from './components/ProfileBadge';
 import Toast from './components/Toast';
 import './App.css';
 
@@ -21,36 +25,80 @@ const CHEERS = [
   '독서왕에 한 걸음 더 가까워졌어요 🏆',
 ];
 
+const CONFIRM_CHEERS = [
+  '확인 완료! 라온이에게 포인트가 지급됐어요 🎉',
+  '잘 확인했어요! 포인트 적립 완료 ✨',
+];
+
 let cheerTimer = null;
 
 export default function App() {
   const { data, update, syncStatus, roomCode, joinRoom, leaveRoom } = useProgress();
+  const { profile, isChild, selectProfile } = useProfile();
   const [activeKey, setActiveKey] = useState('home');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [toastMsg, setToastMsg] = useState('');
 
   const { total, read } = useMemo(() => countTotalProgress(catalog, data), [data]);
 
-  function celebrate() {
-    const msg = CHEERS[Math.floor(Math.random() * CHEERS.length)];
+  function celebrate(pool = CHEERS) {
+    const msg = pool[Math.floor(Math.random() * pool.length)];
     setToastMsg(msg);
     window.clearTimeout(cheerTimer);
     cheerTimer = window.setTimeout(() => setToastMsg(''), 2200);
   }
 
-  function toggleRead(bookId) {
+  // 라온이 marks a book as read -> goes to "pending", awaiting a parent's
+  // confirmation. Only confirmation (below) grants points/progress credit.
+  function requestRead(bookId) {
+    update((prev) => ({
+      ...prev,
+      books: {
+        ...prev.books,
+        [bookId]: { ...(prev.books[bookId] || {}), pending: true, pendingDate: todayStr() },
+      },
+    }));
+    celebrate();
+  }
+
+  function cancelPending(bookId) {
+    update((prev) => ({
+      ...prev,
+      books: {
+        ...prev.books,
+        [bookId]: { ...(prev.books[bookId] || {}), pending: false, pendingDate: null },
+      },
+    }));
+  }
+
+  function confirmRead(bookId) {
     update((prev) => {
       const cur = prev.books[bookId] || {};
-      const nextRead = !cur.read;
-      if (nextRead) celebrate();
       return {
         ...prev,
         books: {
           ...prev.books,
-          [bookId]: { ...cur, read: nextRead, date: nextRead ? todayStr() : cur.date },
+          [bookId]: {
+            ...cur,
+            read: true,
+            pending: false,
+            date: todayStr(),
+            confirmedBy: profile?.id,
+          },
         },
       };
     });
+    celebrate(CONFIRM_CHEERS);
+  }
+
+  function unconfirmRead(bookId) {
+    update((prev) => ({
+      ...prev,
+      books: {
+        ...prev.books,
+        [bookId]: { ...(prev.books[bookId] || {}), read: false, pending: false },
+      },
+    }));
   }
 
   function setRating(bookId, rating) {
@@ -67,25 +115,18 @@ export default function App() {
     }));
   }
 
-  function addFreeReading(entry) {
+  function addMiscBook(title) {
     update((prev) => ({
       ...prev,
-      freeReading: [...prev.freeReading, { id: `free-${Date.now()}`, ...entry }],
-    }));
-    celebrate();
-  }
-
-  function updateFreeReading(id, patch) {
-    update((prev) => ({
-      ...prev,
-      freeReading: prev.freeReading.map((e) => (e.id === id ? { ...e, ...patch } : e)),
+      miscBooks: [...(prev.miscBooks || []), { id: `misc-${Date.now()}`, title }],
     }));
   }
 
-  function removeFreeReading(id) {
+  function removeMiscBook(id) {
     update((prev) => ({
       ...prev,
-      freeReading: prev.freeReading.filter((e) => e.id !== id),
+      miscBooks: (prev.miscBooks || []).filter((b) => b.id !== id),
+      books: Object.fromEntries(Object.entries(prev.books).filter(([k]) => k !== id)),
     }));
   }
 
@@ -106,7 +147,20 @@ export default function App() {
     }));
   }
 
+  const bookActions = {
+    onSetRating: setRating,
+    onSetTitle: setTitleOverride,
+    onRequestRead: requestRead,
+    onCancelPending: cancelPending,
+    onConfirmRead: confirmRead,
+    onUnconfirmRead: unconfirmRead,
+  };
+
   const activeSeries = catalog.series.find((s) => s.key === activeKey);
+
+  if (!profile) {
+    return <ProfileGate onSelect={selectProfile} />;
+  }
 
   return (
     <div className="app-shell">
@@ -115,29 +169,43 @@ export default function App() {
         progress={data}
         activeKey={activeKey}
         onSelect={setActiveKey}
-        freeCount={data.freeReading.length}
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
       />
       <main className="app-main">
         <div className="app-topbar">
           <ProgressHero total={total} read={read} onMenuClick={() => setSidebarOpen(true)} />
-          <SyncPanel
-            syncStatus={syncStatus}
-            roomCode={roomCode}
-            onJoin={joinRoom}
-            onLeave={leaveRoom}
-          />
+          <div className="app-topbar__right">
+            <ProfileBadge profile={profile} onSelect={selectProfile} />
+            <SyncPanel
+              syncStatus={syncStatus}
+              roomCode={roomCode}
+              onJoin={joinRoom}
+              onLeave={leaveRoom}
+            />
+          </div>
         </div>
 
         {activeKey === 'home' && (
-          <HomeView catalog={catalog} progress={data} onNavigate={setActiveKey} />
+          <HomeView catalog={catalog} progress={data} isChild={isChild} onNavigate={setActiveKey} />
+        )}
+
+        {activeKey === 'approvals' && (
+          <ApprovalsView
+            catalog={catalog}
+            progress={data}
+            isChild={isChild}
+            onConfirmRead={confirmRead}
+            onCancelPending={cancelPending}
+            onNavigate={setActiveKey}
+          />
         )}
 
         {activeKey === 'shop' && (
           <ShopView
             catalog={catalog}
             progress={data}
+            isChild={isChild}
             onBuy={buyCoupon}
             onMarkShared={markPurchaseShared}
           />
@@ -147,27 +215,22 @@ export default function App() {
           <RequiredReadingView
             section={catalog.requiredReading}
             progress={data}
-            onToggleRead={toggleRead}
-            onSetRating={setRating}
+            isChild={isChild}
+            actions={bookActions}
           />
         )}
 
         {activeSeries && (
-          <SeriesView
-            series={activeSeries}
-            progress={data}
-            onToggleRead={toggleRead}
-            onSetRating={setRating}
-            onSetTitle={setTitleOverride}
-          />
+          <SeriesView series={activeSeries} progress={data} isChild={isChild} actions={bookActions} />
         )}
 
-        {activeKey === 'free-reading' && (
-          <FreeReadingView
-            entries={data.freeReading}
-            onAdd={addFreeReading}
-            onUpdate={updateFreeReading}
-            onRemove={removeFreeReading}
+        {activeKey === 'misc' && (
+          <MiscView
+            progress={data}
+            isChild={isChild}
+            actions={bookActions}
+            onAdd={addMiscBook}
+            onRemove={removeMiscBook}
           />
         )}
       </main>

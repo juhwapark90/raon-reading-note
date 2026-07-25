@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 import BookCard from './BookCard';
 import ProgressBar from './ProgressBar';
-import { countSeriesProgress, getEffectiveBook, isRead } from '../lib/progressUtils';
+import { countSeriesProgress, getBookStatus, getEffectiveBook } from '../lib/progressUtils';
 
-export default function SeriesView({ series, progress, onToggleRead, onSetRating, onSetTitle }) {
+export default function SeriesView({ series, progress, isChild, actions }) {
   const [query, setQuery] = useState('');
-  const [filter, setFilter] = useState('all'); // all | read | unread | missing
+  const [filter, setFilter] = useState('all'); // all | pending | read | unread | missing
 
   const { total, read } = countSeriesProgress(series, progress);
 
@@ -15,9 +15,10 @@ export default function SeriesView({ series, progress, onToggleRead, onSetRating
       if (query.trim() && !eff.title.includes(query.trim())) return false;
       if (filter === 'missing') return !eff.owned;
       if (!eff.owned) return filter === 'all';
-      const bookRead = isRead(progress, book.id);
-      if (filter === 'read') return bookRead;
-      if (filter === 'unread') return !bookRead;
+      const status = getBookStatus(progress, book.id);
+      if (filter === 'read') return status === 'read';
+      if (filter === 'pending') return status === 'pending';
+      if (filter === 'unread') return status === 'unread';
       return true;
     });
   }, [series.books, progress, query, filter]);
@@ -42,6 +43,7 @@ export default function SeriesView({ series, progress, onToggleRead, onSetRating
           {[
             ['all', '전체'],
             ['unread', '안읽음'],
+            ['pending', '확인 대기'],
             ['read', '읽음'],
             ['missing', '미보유'],
           ].map(([key, label]) => (
@@ -63,9 +65,8 @@ export default function SeriesView({ series, progress, onToggleRead, onSetRating
             book={book}
             progress={progress}
             accent={series.color}
-            onToggleRead={onToggleRead}
-            onSetRating={onSetRating}
-            onSetTitle={onSetTitle}
+            isChild={isChild}
+            {...actions}
           />
         ))}
         {visibleBooks.length === 0 && <p className="empty-msg">조건에 맞는 책이 없어요.</p>}

@@ -1,12 +1,20 @@
-import { countSeriesProgress, totalPointsEarned, walletBalance } from '../lib/progressUtils';
+import {
+  countMiscProgress,
+  countSeriesProgress,
+  pendingCount,
+  totalPointsEarned,
+  walletBalance,
+} from '../lib/progressUtils';
 import ProgressBar from './ProgressBar';
 
-export default function HomeView({ catalog, progress, onNavigate }) {
+export default function HomeView({ catalog, progress, isChild, onNavigate }) {
   const points = totalPointsEarned(catalog, progress);
   const balance = walletBalance(catalog, progress);
+  const pending = pendingCount(catalog, progress);
 
   const req = catalog.requiredReading;
   const reqRead = req.books.filter((b) => progress.books?.[b.id]?.read).length;
+  const misc = countMiscProgress(progress);
 
   const cards = [
     { key: req.key, name: req.name, emoji: req.emoji, color: req.color, total: req.books.length, read: reqRead },
@@ -14,14 +22,7 @@ export default function HomeView({ catalog, progress, onNavigate }) {
       const { total, read } = countSeriesProgress(s, progress);
       return { key: s.key, name: s.name, emoji: s.emoji, color: s.color, total, read };
     }),
-    {
-      key: 'free-reading',
-      name: '자유 독서 일지',
-      emoji: '📔',
-      color: '#898781',
-      total: null,
-      read: progress.freeReading?.length || 0,
-    },
+    { key: 'misc', name: '기타', emoji: '🗂️', color: '#898781', total: misc.total, read: misc.read },
   ];
 
   return (
@@ -31,6 +32,17 @@ export default function HomeView({ catalog, progress, onNavigate }) {
           <span className="section-view__emoji">🏠</span> 오늘의 독서 현황
         </h2>
       </header>
+
+      {pending > 0 && (
+        <button className="pending-banner" onClick={() => onNavigate('approvals')}>
+          <span className="pending-banner__icon">🔔</span>
+          <span>
+            {isChild
+              ? `확인을 기다리는 책이 ${pending}권 있어요.`
+              : `라온이가 ${pending}권을 읽었다고 알려왔어요! 눌러서 확인해주세요.`}
+          </span>
+        </button>
+      )}
 
       <div className="home-stats">
         <div className="home-stat-card">
@@ -56,11 +68,7 @@ export default function HomeView({ catalog, progress, onNavigate }) {
               <span className="home-card__emoji">{c.emoji}</span>
               <span className="home-card__name">{c.name}</span>
             </div>
-            {c.total !== null ? (
-              <ProgressBar total={c.total} read={c.read} color={c.color} size="sm" />
-            ) : (
-              <div className="home-card__free">{c.read}권 기록</div>
-            )}
+            <ProgressBar total={c.total} read={c.read} color={c.color} size="sm" />
           </button>
         ))}
       </div>

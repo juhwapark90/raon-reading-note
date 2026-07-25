@@ -4,7 +4,7 @@ import { walletBalance } from '../lib/progressUtils';
 import { todayStr } from '../lib/progressUtils';
 import CouponPopup from './CouponPopup';
 
-export default function ShopView({ catalog, progress, onBuy, onMarkShared }) {
+export default function ShopView({ catalog, progress, isChild, onBuy, onMarkShared }) {
   const [popupPurchase, setPopupPurchase] = useState(null);
   const balance = walletBalance(catalog, progress);
   const purchases = [...(progress.purchases || [])].reverse();
@@ -39,7 +39,10 @@ export default function ShopView({ catalog, progress, onBuy, onMarkShared }) {
 
       <div className="shop-item-grid">
         {COUPON_ITEMS.map((item) => {
-          const canBuy = balance >= item.price;
+          const canBuy = isChild && balance >= item.price;
+          let label = `교환 (${item.price}P)`;
+          if (!isChild) label = '라온이만 교환할 수 있어요';
+          else if (balance < item.price) label = `포인트 부족 (${item.price}P)`;
           return (
             <div key={item.id} className="shop-item-card">
               <div className="shop-item-card__icon">{item.icon}</div>
@@ -49,7 +52,7 @@ export default function ShopView({ catalog, progress, onBuy, onMarkShared }) {
                 disabled={!canBuy}
                 onClick={() => handleBuy(item)}
               >
-                {canBuy ? `교환 (${item.price}P)` : `포인트 부족 (${item.price}P)`}
+                {label}
               </button>
             </div>
           );

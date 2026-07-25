@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import BookCard from './BookCard';
 import ProgressBar from './ProgressBar';
-import { isRead } from '../lib/progressUtils';
+import { getBookStatus, isRead } from '../lib/progressUtils';
 
 const GENRE_COLOR = {
   문학: '#2a78d6',
@@ -11,7 +11,7 @@ const GENRE_COLOR = {
   예술: '#e87ba4',
 };
 
-export default function RequiredReadingView({ section, progress, onToggleRead, onSetRating }) {
+export default function RequiredReadingView({ section, progress, isChild, actions }) {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState('all');
   const [activeLevel, setActiveLevel] = useState('전체');
@@ -65,6 +65,7 @@ export default function RequiredReadingView({ section, progress, onToggleRead, o
           {[
             ['all', '전체'],
             ['unread', '안읽음'],
+            ['pending', '확인 대기'],
             ['read', '읽음'],
           ].map(([key, label]) => (
             <button
@@ -81,9 +82,10 @@ export default function RequiredReadingView({ section, progress, onToggleRead, o
       {levelsToShow.map((level) => {
         const books = byLevel[level].filter((b) => {
           if (query.trim() && !b.title.includes(query.trim())) return false;
-          const r = isRead(progress, b.id);
-          if (filter === 'read') return r;
-          if (filter === 'unread') return !r;
+          const status = getBookStatus(progress, b.id);
+          if (filter === 'read') return status === 'read';
+          if (filter === 'pending') return status === 'pending';
+          if (filter === 'unread') return status === 'unread';
           return true;
         });
         const levelTotal = byLevel[level].length;
@@ -103,9 +105,8 @@ export default function RequiredReadingView({ section, progress, onToggleRead, o
                   progress={progress}
                   accent={GENRE_COLOR[book.genre] || section.color}
                   extraTag={book.genre}
-                  onToggleRead={onToggleRead}
-                  onSetRating={onSetRating}
-                  onSetTitle={() => {}}
+                  isChild={isChild}
+                  {...actions}
                 />
               ))}
             </div>
