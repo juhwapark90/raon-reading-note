@@ -1,0 +1,4402 @@
+{
+  "generatedAt": "2026-07-25T09:37:39.469Z",
+  "series": [
+    {
+      "key": "aura-korean-history",
+      "name": "아우라 한국사",
+      "emoji": "🏯",
+      "color": "#2a78d6",
+      "books": [
+        {
+          "id": "aura-korean-history-1",
+          "number": 1,
+          "title": "뚝딱뚝딱 뭐 하니?",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-2",
+          "number": 2,
+          "title": "고조선은 어떤 나라였을까?",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-3",
+          "number": 3,
+          "title": "활 쏘는 임금님",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-4",
+          "number": 4,
+          "title": "담덕이의 모험",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-5",
+          "number": 5,
+          "title": "쪽구들 놓고 장가갈 테야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-6",
+          "number": 6,
+          "title": "거봐, 여기가 낫지?",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-7",
+          "number": 7,
+          "title": "이 땅의 끝은 어디일까?",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-8",
+          "number": 8,
+          "title": "맛둥 서방의 두근두근 대작전",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-9",
+          "number": 9,
+          "title": "여섯 마을들아, 모여라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-10",
+          "number": 10,
+          "title": "한강은 내 거야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-11",
+          "number": 11,
+          "title": "나아감은 있어도 물러섬은 없다",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-12",
+          "number": 12,
+          "title": "철로 만든 금빛 나라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-13",
+          "number": 13,
+          "title": "약속을 안 지키면 혼내줄거야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-14",
+          "number": 14,
+          "title": "해적들아, 꼼짝 마라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-15",
+          "number": 15,
+          "title": "우리는 고구려의 후손",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-16",
+          "number": 16,
+          "title": "숟염쟁이와 외눈박이",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-17",
+          "number": 17,
+          "title": "왕 중 왕, 왕건",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-18",
+          "number": 18,
+          "title": "나라의 기초를 튼튼히 하자",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-19",
+          "number": 19,
+          "title": "딱 걸렸어, 거란",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-20",
+          "number": 20,
+          "title": "벽란도로 오세요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-21",
+          "number": 21,
+          "title": "나도 권력을 잡고 싶다고",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-22",
+          "number": 22,
+          "title": "망이 망소이의 편지",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-23",
+          "number": 23,
+          "title": "목판에 기도를 새겨 넣어요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-24",
+          "number": 24,
+          "title": "노국 공주와 함꼐라면",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-25",
+          "number": 25,
+          "title": "말을 돌려라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-26",
+          "number": 26,
+          "title": "육룡과 함꼐 날아요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-27",
+          "number": 27,
+          "title": "나 혼자 한 건 아니야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-28",
+          "number": 28,
+          "title": "남원 이 도령 한양에 가요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-29",
+          "number": 29,
+          "title": "책 속에 답이 있어요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-30",
+          "number": 30,
+          "title": "나의 죽음을 알리지 마라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-31",
+          "number": 31,
+          "title": "오랑캐에게 지고 싶지 않아",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-32",
+          "number": 32,
+          "title": "탕탕평평 나라 만들기",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-33",
+          "number": 33,
+          "title": "안경잡이 임금님",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-34",
+          "number": 34,
+          "title": "제비 바위 서 ㄴ비의 꿈",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-35",
+          "number": 35,
+          "title": "나도 양반이 될 테야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-36",
+          "number": 36,
+          "title": "사람답게 살고 싶어요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-37",
+          "number": 37,
+          "title": "문을 닫아라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-38",
+          "number": 38,
+          "title": "가비차의 맛이 어떻습니까?",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-39",
+          "number": 39,
+          "title": "새야 새야 파랑새야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-40",
+          "number": 40,
+          "title": "나라를 넘긴 을사오적",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-41",
+          "number": 41,
+          "title": "펜을 놓고 일어서자",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-42",
+          "number": 42,
+          "title": "버선 속에 꼭꼭 숨겨라",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-43",
+          "number": 43,
+          "title": "내 이름은 히라누마가 아니야",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-44",
+          "number": 44,
+          "title": "엄마가 보고 싶어요",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-45",
+          "number": 45,
+          "title": "칙칙폭폭, 앞으로 앞으로",
+          "owned": true
+        },
+        {
+          "id": "aura-korean-history-46",
+          "number": 46,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "aura-korean-history-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "aura-korean-history-48",
+          "number": 48,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "aura-korean-history-49",
+          "number": 49,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "aura-korean-history-50",
+          "number": 50,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "person-seminar",
+      "name": "인물 세미나",
+      "emoji": "🎓",
+      "color": "#eb6834",
+      "books": [
+        {
+          "id": "person-seminar-1",
+          "number": 1,
+          "title": "백성을 눈뜨게 한 왕, 세종",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-2",
+          "number": 2,
+          "title": "살기 좋은 나라를 위하여! 정조",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-3",
+          "number": 3,
+          "title": "목숨을 바쳐 나라를 지킨 이순신",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-4",
+          "number": 4,
+          "title": "포기를 모르는 독립 운동가, 김구",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-5",
+          "number": 5,
+          "title": "흑인의 자유를 위해 애쓴 링컨",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-6",
+          "number": 6,
+          "title": "함께하는 세상이에요, 만델라",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-7",
+          "number": 7,
+          "title": "마음이 따뜻한 강철왕, 카네기",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-8",
+          "number": 8,
+          "title": "만화 왕국 속으로! 월트 디즈니",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-9",
+          "number": 9,
+          "title": "컴퓨터 천재, 빌 게이츠",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-10",
+          "number": 10,
+          "title": "한 손에 컴퓨터가 쏙, 스티브 잡스",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-11",
+          "number": 11,
+          "title": "웃긴 영화로 감동을 준 찰리 채플린",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-12",
+          "number": 12,
+          "title": "마음이 더 아름다운 배우, 오드리 햅번",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-13",
+          "number": 13,
+          "title": "토크 쇼의 여왕, 오프라 윈프리",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-14",
+          "number": 14,
+          "title": "그리고 또 그려 봐, 미야자키 하야오",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-15",
+          "number": 15,
+          "title": "어디까지 상상해 봤니? 스필버그",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-16",
+          "number": 16,
+          "title": "광고의 아버지, 오길비",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-17",
+          "number": 17,
+          "title": "행복을 전하는 작은 발의 영웅, 닉 부이치치",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-18",
+          "number": 18,
+          "title": "대한 독립을 외친 작은 거인, 유관순",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-19",
+          "number": 19,
+          "title": "어린이의 행복을 꿈꾼 방정환",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-20",
+          "number": 20,
+          "title": "톤즈에 희망을! 이태석",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-21",
+          "number": 21,
+          "title": "평화의 물레를 돌린 간디",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-22",
+          "number": 22,
+          "title": "세상의 빛이 된 헬렌 켈러",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-23",
+          "number": 23,
+          "title": "높고 높은 산을 향하여, 엄홍길",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-24",
+          "number": 24,
+          "title": "브라질의 축구 황제, 펠레",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-25",
+          "number": 25,
+          "title": "농구의 신, 마이클 조던",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-26",
+          "number": 26,
+          "title": "한 마리의 나비처럼, 안나 파블로바",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-27",
+          "number": 27,
+          "title": "연습왕이 ㄴ음악 천재, 모차르트",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-28",
+          "number": 28,
+          "title": "고통을 극복한 음악가, 베토벤",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-29",
+          "number": 29,
+          "title": "이래도 노, 저래도 노! 토스카니니",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-30",
+          "number": 30,
+          "title": "음악으로 하나가 된 비틀스",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-31",
+          "number": 31,
+          "title": "이야기 길을 따라서, 그림 형제",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-32",
+          "number": 32,
+          "title": "통화의 세상을 펼친 안데르센",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-33",
+          "number": 33,
+          "title": "해리 포터의 모든 것, 조앤롤링",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-34",
+          "number": 34,
+          "title": "시대를 앞서간 패션 디자이너, 샤넬",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-35",
+          "number": 35,
+          "title": "머리 위의 조각가, 비달 사순",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-36",
+          "number": 36,
+          "title": "패션이라면 나에게 물어봐, 애나 윈터",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-37",
+          "number": 37,
+          "title": "오늘은 또 무엇을 만들까? 장영실",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-38",
+          "number": 38,
+          "title": "백성을 생각한 조선의 실학자, 정양용",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-39",
+          "number": 39,
+          "title": "수많은 백성을 살린 조선의 명의, 허준",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-40",
+          "number": 40,
+          "title": "열정의 나비 박스, 석주명",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-41",
+          "number": 41,
+          "title": "정글로 간 민벌레 박사, 최재천",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-42",
+          "number": 42,
+          "title": "사막을 누빈 공룡 박사, 이융남",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-43",
+          "number": 43,
+          "title": "침팬지의 친구, 제인 구달",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-44",
+          "number": 44,
+          "title": "세상을 사랑한 과학자, 마리 퀴리",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-45",
+          "number": 45,
+          "title": "머릿속으로 실험을 하는 천재, 아인슈타인",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-46",
+          "number": 46,
+          "title": "생각으로 우주를 여행하는 스티븐 호킹",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-47",
+          "number": 47,
+          "title": "세계최초의 우주 비행사, 유리 가가린",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-48",
+          "number": 48,
+          "title": "발명을 위해 태어난 에디슨",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-49",
+          "number": 49,
+          "title": "하늘을 날기까지, 라이트 형제",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-50",
+          "number": 50,
+          "title": "손으로 보는 세상을 밝힌 루이 브라유",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-51",
+          "number": 51,
+          "title": "레고 블록 세상으로 오 세요, 고트프레드",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-52",
+          "number": 52,
+          "title": "섬세한 붓놀림의 예술가, 신사임담",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-53",
+          "number": 53,
+          "title": "생생한 풍속화는 나처럼, 김홍도",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-54",
+          "number": 54,
+          "title": "이상한 텔레비전 예술가, 백남준",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-55",
+          "number": 55,
+          "title": "호기심이 많은 팔방미인, 다빈치",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-56",
+          "number": 56,
+          "title": "나만의 빛깔을 찾아서, 고흐",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-57",
+          "number": 57,
+          "title": "자연을 사랑한 건축가, 가우디",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-58",
+          "number": 58,
+          "title": "찰칵! 셔터를 눌러라, 로버트 카파",
+          "owned": true
+        },
+        {
+          "id": "person-seminar-59",
+          "number": 59,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-60",
+          "number": 60,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-61",
+          "number": 61,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-62",
+          "number": 62,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-63",
+          "number": 63,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-64",
+          "number": 64,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-65",
+          "number": 65,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-66",
+          "number": 66,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-67",
+          "number": 67,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-68",
+          "number": 68,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-69",
+          "number": 69,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-70",
+          "number": 70,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-71",
+          "number": 71,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-72",
+          "number": 72,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-73",
+          "number": 73,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-74",
+          "number": 74,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "person-seminar-75",
+          "number": 75,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "society-picture",
+      "name": "사회 그림책",
+      "emoji": "🏘️",
+      "color": "#1baf7a",
+      "books": [
+        {
+          "id": "society-picture-1",
+          "number": 1,
+          "title": "모두 다 내 모습이야",
+          "owned": true
+        },
+        {
+          "id": "society-picture-2",
+          "number": 2,
+          "title": "행복 레스토랑에 온 가족들",
+          "owned": true
+        },
+        {
+          "id": "society-picture-3",
+          "number": 3,
+          "title": "우리동네에 온 멍이",
+          "owned": true
+        },
+        {
+          "id": "society-picture-4",
+          "number": 4,
+          "title": "지구촌 아이들의 꿈",
+          "owned": true
+        },
+        {
+          "id": "society-picture-5",
+          "number": 5,
+          "title": "와글와글 세계의 축제",
+          "owned": true
+        },
+        {
+          "id": "society-picture-6",
+          "number": 6,
+          "title": "길로 길로 가지요",
+          "owned": true
+        },
+        {
+          "id": "society-picture-7",
+          "number": 7,
+          "title": "장난감 나라에도 규칙이 필요해",
+          "owned": true
+        },
+        {
+          "id": "society-picture-8",
+          "number": 8,
+          "title": "동화 마을에 공공 기관이 있다면",
+          "owned": true
+        },
+        {
+          "id": "society-picture-9",
+          "number": 9,
+          "title": "우리는 행복할 권리가 있어요",
+          "owned": true
+        },
+        {
+          "id": "society-picture-10",
+          "number": 10,
+          "title": "민주 아파트로 놀러 오세요!",
+          "owned": true
+        },
+        {
+          "id": "society-picture-11",
+          "number": 11,
+          "title": "법정에 선 과일박쥐",
+          "owned": true
+        },
+        {
+          "id": "society-picture-12",
+          "number": 12,
+          "title": "붕어빵은 어떻게 사 먹어요?",
+          "owned": true
+        },
+        {
+          "id": "society-picture-13",
+          "number": 13,
+          "title": "시장 구경 재밌다!",
+          "owned": true
+        },
+        {
+          "id": "society-picture-14",
+          "number": 14,
+          "title": "책이 내 손에 오기까지",
+          "owned": true
+        },
+        {
+          "id": "society-picture-15",
+          "number": 15,
+          "title": "방송국 이모저모",
+          "owned": true
+        },
+        {
+          "id": "society-picture-16",
+          "number": 16,
+          "title": "땅에서 키우고! 공장에서 만들고!",
+          "owned": true
+        },
+        {
+          "id": "society-picture-17",
+          "number": 17,
+          "title": "별별 옷 별별 직업",
+          "owned": true
+        },
+        {
+          "id": "society-picture-18",
+          "number": 18,
+          "title": "주방장님의 비밀 공책",
+          "owned": true
+        },
+        {
+          "id": "society-picture-19",
+          "number": 19,
+          "title": "안내견 순둥이의 하루",
+          "owned": true
+        },
+        {
+          "id": "society-picture-20",
+          "number": 20,
+          "title": "새로 태어난 마을 동피랑",
+          "owned": true
+        },
+        {
+          "id": "society-picture-21",
+          "number": 21,
+          "title": "아이티에 희망을",
+          "owned": true
+        },
+        {
+          "id": "society-picture-22",
+          "number": 22,
+          "title": "맛 찾아 멋 찾아 특산물 여행",
+          "owned": true
+        },
+        {
+          "id": "society-picture-23",
+          "number": 23,
+          "title": "우리 땅이 기가 막혀",
+          "owned": true
+        },
+        {
+          "id": "society-picture-24",
+          "number": 24,
+          "title": "산타 할아버지의 지도",
+          "owned": true
+        },
+        {
+          "id": "society-picture-25",
+          "number": 25,
+          "title": "계절 따라 우리 명절",
+          "owned": true
+        },
+        {
+          "id": "society-picture-26",
+          "number": 26,
+          "title": "반디마을 노총각 이장님",
+          "owned": true
+        },
+        {
+          "id": "society-picture-27",
+          "number": 27,
+          "title": "송이의 산골 구경",
+          "owned": true
+        },
+        {
+          "id": "society-picture-28",
+          "number": 28,
+          "title": "우리는 어촌에 살아요",
+          "owned": true
+        },
+        {
+          "id": "society-picture-29",
+          "number": 29,
+          "title": "도시가 들려주는 이야기",
+          "owned": true
+        },
+        {
+          "id": "society-picture-30",
+          "number": 30,
+          "title": "하양이와 까망이의 지구 탐험",
+          "owned": true
+        },
+        {
+          "id": "society-picture-31",
+          "number": 31,
+          "title": "과학 기술이 만드는 세상",
+          "owned": true
+        },
+        {
+          "id": "society-picture-32",
+          "number": 32,
+          "title": "할아버지가 자랄 때에는",
+          "owned": true
+        },
+        {
+          "id": "society-picture-33",
+          "number": 33,
+          "title": "꽃분이가 살던 은행나무 마을",
+          "owned": true
+        },
+        {
+          "id": "society-picture-34",
+          "number": 34,
+          "title": "숭례문의 꿈",
+          "owned": true
+        },
+        {
+          "id": "society-picture-35",
+          "number": 35,
+          "title": "내가 버린 쓰레기, 어디로 갈까?",
+          "owned": true
+        },
+        {
+          "id": "society-picture-36",
+          "number": 36,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-37",
+          "number": 37,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-38",
+          "number": 38,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-39",
+          "number": 39,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-40",
+          "number": 40,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-41",
+          "number": 41,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-42",
+          "number": 42,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-43",
+          "number": 43,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-44",
+          "number": 44,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-45",
+          "number": 45,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-46",
+          "number": 46,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-48",
+          "number": 48,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-49",
+          "number": 49,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "society-picture-50",
+          "number": 50,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "nature-friends",
+      "name": "자연이랑",
+      "emoji": "🐿️",
+      "color": "#008300",
+      "books": [
+        {
+          "id": "nature-friends-1",
+          "number": 1,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-2",
+          "number": 2,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-3",
+          "number": 3,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-4",
+          "number": 4,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-5",
+          "number": 5,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-6",
+          "number": 6,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-7",
+          "number": 7,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-8",
+          "number": 8,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-9",
+          "number": 9,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-10",
+          "number": 10,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-11",
+          "number": 11,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-12",
+          "number": 12,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-13",
+          "number": 13,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-14",
+          "number": 14,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-15",
+          "number": 15,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-16",
+          "number": 16,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-17",
+          "number": 17,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-18",
+          "number": 18,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-19",
+          "number": 19,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-20",
+          "number": 20,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "nature-friends-21",
+          "number": 21,
+          "title": "고양이는 아무도 부럽지 않아",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-22",
+          "number": 22,
+          "title": "송아지, 엄마 소 닮았네",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-23",
+          "number": 23,
+          "title": "길고도 긴 기린",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-24",
+          "number": 24,
+          "title": "다람쥐는 바빠",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-25",
+          "number": 25,
+          "title": "뿔, 뿔, 뿔, 사슴뿔",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-26",
+          "number": 26,
+          "title": "얼룩말은 할 수 있어",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-27",
+          "number": 27,
+          "title": "아기 캥거루를 응원해",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-28",
+          "number": 28,
+          "title": "코끼리는 어마어마해",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-29",
+          "number": 29,
+          "title": "어느 날 코뿔소랑 딱!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-30",
+          "number": 30,
+          "title": "괜찮아, 나 코알라야",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-31",
+          "number": 31,
+          "title": "나도 아빠 사자처럼",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-32",
+          "number": 32,
+          "title": "나는야, 영리한 여우",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-33",
+          "number": 33,
+          "title": "너희가 모두 원숭이라고?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-34",
+          "number": 34,
+          "title": "그물의 왕 거미",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-35",
+          "number": 35,
+          "title": "달팽이야, 별명을 지어 줄게",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-36",
+          "number": 36,
+          "title": "변신! 카멜레온!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-37",
+          "number": 37,
+          "title": "못난이 공룡 알로, 왕이 되다",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-38",
+          "number": 38,
+          "title": "말미잘과 흰동가리는 짝궁",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-39",
+          "number": 39,
+          "title": "문어랑 오징어는 특별해",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-40",
+          "number": 40,
+          "title": "바다의 사냥꾼 상어",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-41",
+          "number": 41,
+          "title": "고래는 신기해",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-42",
+          "number": 42,
+          "title": "수달아, 놀자!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-43",
+          "number": 43,
+          "title": "물범아, 기다릴게",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-44",
+          "number": 44,
+          "title": "앗, 악어 떼다",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-45",
+          "number": 45,
+          "title": "엄마 바다거북의 편지",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-46",
+          "number": 46,
+          "title": "연어야, 힘내라!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-47",
+          "number": 47,
+          "title": "찾았다, 게!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-48",
+          "number": 48,
+          "title": "닭이야? 오리야?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-49",
+          "number": 49,
+          "title": "아빠처럼 멋진 펭귄이 될 거야",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-50",
+          "number": 50,
+          "title": "꿋꿋한 수리, 사랑이",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-51",
+          "number": 51,
+          "title": "올빼미는 좋겠다",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-52",
+          "number": 52,
+          "title": "어느 날 뻐꾸기가 말이야",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-53",
+          "number": 53,
+          "title": "나야, 나! 무당벌레!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-54",
+          "number": 54,
+          "title": "반딧물이를 만나려면?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-55",
+          "number": 55,
+          "title": "숲속의 결투 왕 장수풍뎅이와 사슴벌레",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-56",
+          "number": 56,
+          "title": "꿀벌은 바빠도 너무 바빠!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-57",
+          "number": 57,
+          "title": "여왕개미로 산다는 건",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-58",
+          "number": 58,
+          "title": "나비야, 조심해!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-59",
+          "number": 59,
+          "title": "쪼끄마한 메뚜기가 폴짝",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-60",
+          "number": 60,
+          "title": "잠자리를 잡겠다고?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-61",
+          "number": 61,
+          "title": "날았다, 매미!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-62",
+          "number": 62,
+          "title": "벼농사를 잘 지으려면",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-63",
+          "number": 63,
+          "title": "콩은 멀리뛰기 선수",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-64",
+          "number": 64,
+          "title": "옥수수 때문에 뿔났다!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-65",
+          "number": 65,
+          "title": "쉿! 버섯의 비밀",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-66",
+          "number": 66,
+          "title": "오독오독 밤 밤, 말랑말랑 감 감",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-67",
+          "number": 67,
+          "title": "박, 박, 수박과 호박",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-68",
+          "number": 68,
+          "title": "내가 키운 배추와 무",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-69",
+          "number": 69,
+          "title": "감자와 고구마! 같아? 달라?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-70",
+          "number": 70,
+          "title": "토마토가 어디가 어때서?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-71",
+          "number": 71,
+          "title": "도토리가 툭",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-72",
+          "number": 72,
+          "title": "꽃잎이 한가득, 민들레",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-73",
+          "number": 73,
+          "title": "해바라기처럼 키가 크려면?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-74",
+          "number": 74,
+          "title": "난 나팔꽃이야!",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-75",
+          "number": 75,
+          "title": "연꽃이 활짝",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-76",
+          "number": 76,
+          "title": "개나리의 봄",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-77",
+          "number": 77,
+          "title": "선인장은 사막에서 어떻게 살아남았을까?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-78",
+          "number": 78,
+          "title": "배고픈 벌레잡이 식물들",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-79",
+          "number": 79,
+          "title": "소나무는 언제나 그래",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-80",
+          "number": 80,
+          "title": "은행나무, 딱 보면 알아",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-81",
+          "number": 81,
+          "title": "아빠도 새끼를 낳는다고?",
+          "owned": true
+        },
+        {
+          "id": "nature-friends-82",
+          "number": 82,
+          "title": "동물들의 똥 자랑대회",
+          "owned": true
+        }
+      ]
+    },
+    {
+      "key": "world-classics",
+      "name": "세계명작동화",
+      "emoji": "🏰",
+      "color": "#4a3aa7",
+      "books": [
+        {
+          "id": "world-classics-1",
+          "number": 1,
+          "title": "엄마 찾아 삼만 리",
+          "owned": true
+        },
+        {
+          "id": "world-classics-2",
+          "number": 2,
+          "title": "이상한 나라의 앨리스",
+          "owned": true
+        },
+        {
+          "id": "world-classics-3",
+          "number": 3,
+          "title": "플랜더스의 개",
+          "owned": true
+        },
+        {
+          "id": "world-classics-4",
+          "number": 4,
+          "title": "걸리버 여행기",
+          "owned": true
+        },
+        {
+          "id": "world-classics-5",
+          "number": 5,
+          "title": "바람이 준 선물",
+          "owned": true
+        },
+        {
+          "id": "world-classics-6",
+          "number": 6,
+          "title": "욕심쟁이 거인",
+          "owned": true
+        },
+        {
+          "id": "world-classics-7",
+          "number": 7,
+          "title": "신데렐라",
+          "owned": true
+        },
+        {
+          "id": "world-classics-8",
+          "number": 8,
+          "title": "피터 팬",
+          "owned": true
+        },
+        {
+          "id": "world-classics-9",
+          "number": 9,
+          "title": "구둣방 할아버지와 난쟁이",
+          "owned": true
+        },
+        {
+          "id": "world-classics-10",
+          "number": 10,
+          "title": "알라딘과 요술 램프",
+          "owned": true
+        },
+        {
+          "id": "world-classics-11",
+          "number": 11,
+          "title": "임금님 귀는 당나귀 귀",
+          "owned": true
+        },
+        {
+          "id": "world-classics-12",
+          "number": 12,
+          "title": "소공녀",
+          "owned": true
+        },
+        {
+          "id": "world-classics-13",
+          "number": 13,
+          "title": "바보 이반",
+          "owned": true
+        },
+        {
+          "id": "world-classics-14",
+          "number": 14,
+          "title": "잠자는 숲 속의 공주",
+          "owned": true
+        },
+        {
+          "id": "world-classics-15",
+          "number": 15,
+          "title": "장난감 병정",
+          "owned": true
+        },
+        {
+          "id": "world-classics-16",
+          "number": 16,
+          "title": "아기돼지 삼 형제",
+          "owned": true
+        },
+        {
+          "id": "world-classics-17",
+          "number": 17,
+          "title": "정글북",
+          "owned": true
+        },
+        {
+          "id": "world-classics-18",
+          "number": 18,
+          "title": "알리바바와 사십 명의 도둑",
+          "owned": true
+        },
+        {
+          "id": "world-classics-19",
+          "number": 19,
+          "title": "신밧드의 여행",
+          "owned": true
+        },
+        {
+          "id": "world-classics-20",
+          "number": 20,
+          "title": "행복한 왕자",
+          "owned": true
+        },
+        {
+          "id": "world-classics-21",
+          "number": 21,
+          "title": "미녀와 야수",
+          "owned": true
+        },
+        {
+          "id": "world-classics-22",
+          "number": 22,
+          "title": "빨간 모자",
+          "owned": true
+        },
+        {
+          "id": "world-classics-23",
+          "number": 23,
+          "title": "잭과 콩나무",
+          "owned": true
+        },
+        {
+          "id": "world-classics-24",
+          "number": 24,
+          "title": "파랑새",
+          "owned": true
+        },
+        {
+          "id": "world-classics-25",
+          "number": 25,
+          "title": "장화 신은 고양이",
+          "owned": true
+        },
+        {
+          "id": "world-classics-26",
+          "number": 26,
+          "title": "알프스 소녀 하이디",
+          "owned": true
+        },
+        {
+          "id": "world-classics-27",
+          "number": 27,
+          "title": "피노키오",
+          "owned": true
+        },
+        {
+          "id": "world-classics-28",
+          "number": 28,
+          "title": "빌헬름 텔",
+          "owned": true
+        },
+        {
+          "id": "world-classics-29",
+          "number": 29,
+          "title": "오즈의 마법사",
+          "owned": true
+        },
+        {
+          "id": "world-classics-30",
+          "number": 30,
+          "title": "크리스마스 캐럴",
+          "owned": true
+        },
+        {
+          "id": "world-classics-31",
+          "number": 31,
+          "title": "브레멘의 음악대",
+          "owned": true
+        },
+        {
+          "id": "world-classics-32",
+          "number": 32,
+          "title": "황제와 나이팅게일",
+          "owned": true
+        },
+        {
+          "id": "world-classics-33",
+          "number": 33,
+          "title": "헨젤과 그레텔",
+          "owned": true
+        },
+        {
+          "id": "world-classics-34",
+          "number": 34,
+          "title": "벌거벗은 임금님",
+          "owned": true
+        },
+        {
+          "id": "world-classics-35",
+          "number": 35,
+          "title": "백설 공주",
+          "owned": true
+        },
+        {
+          "id": "world-classics-36",
+          "number": 36,
+          "title": "백조 왕자",
+          "owned": true
+        },
+        {
+          "id": "world-classics-37",
+          "number": 37,
+          "title": "늑대와 일곱 마리 아기염소",
+          "owned": true
+        },
+        {
+          "id": "world-classics-38",
+          "number": 38,
+          "title": "완두콩 오 형제",
+          "owned": true
+        },
+        {
+          "id": "world-classics-39",
+          "number": 39,
+          "title": "인어 공주",
+          "owned": true
+        },
+        {
+          "id": "world-classics-40",
+          "number": 40,
+          "title": "성냥팔이 소녀",
+          "owned": true
+        },
+        {
+          "id": "world-classics-41",
+          "number": 41,
+          "title": "피리 부는 사나이",
+          "owned": true
+        },
+        {
+          "id": "world-classics-42",
+          "number": 42,
+          "title": "닐스의 신기한 여행",
+          "owned": true
+        },
+        {
+          "id": "world-classics-43",
+          "number": 43,
+          "title": "눈의 여왕",
+          "owned": true
+        },
+        {
+          "id": "world-classics-44",
+          "number": 44,
+          "title": "꿀벌 마야의 모험",
+          "owned": true
+        },
+        {
+          "id": "world-classics-45",
+          "number": 45,
+          "title": "엄지 공주",
+          "owned": true
+        },
+        {
+          "id": "world-classics-46",
+          "number": 46,
+          "title": "미운 아기 오리",
+          "owned": true
+        },
+        {
+          "id": "world-classics-47",
+          "number": 47,
+          "title": "개구리 왕자",
+          "owned": true
+        },
+        {
+          "id": "world-classics-48",
+          "number": 48,
+          "title": "누더기 아가씨",
+          "owned": true
+        },
+        {
+          "id": "world-classics-49",
+          "number": 49,
+          "title": "이솝 이야기 1",
+          "owned": true
+        },
+        {
+          "id": "world-classics-50",
+          "number": 50,
+          "title": "이솝 이야기 2",
+          "owned": true
+        }
+      ]
+    },
+    {
+      "key": "magic-jar",
+      "name": "요술 항아리",
+      "emoji": "🏺",
+      "color": "#eda100",
+      "books": [
+        {
+          "id": "magic-jar-1",
+          "number": 1,
+          "title": "흥부와 놀부",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-2",
+          "number": 2,
+          "title": "요술 부채",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-3",
+          "number": 3,
+          "title": "은혜 갚은 꿩",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-4",
+          "number": 4,
+          "title": "소금 나오는 맷돌",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-5",
+          "number": 5,
+          "title": "도깨비 씨름 잔치",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-6",
+          "number": 6,
+          "title": "무지개다리",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-7",
+          "number": 7,
+          "title": "콩쥐와 팥쥐",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-8",
+          "number": 8,
+          "title": "은혜 갚은 두꺼비",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-9",
+          "number": 9,
+          "title": "복 타러 간 총각",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-10",
+          "number": 10,
+          "title": "구렁덩덩 새 선비",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-11",
+          "number": 11,
+          "title": "네 장사의 모험",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-12",
+          "number": 12,
+          "title": "반쪽이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-13",
+          "number": 13,
+          "title": "밤나무 도령",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-14",
+          "number": 14,
+          "title": "선녀와 나무꾼",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-15",
+          "number": 15,
+          "title": "땅속 나라 괴물 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-16",
+          "number": 16,
+          "title": "해와 달이 된 오누이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-17",
+          "number": 17,
+          "title": "주먹이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-18",
+          "number": 18,
+          "title": "좁쌀 한 톨로 장가들기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-19",
+          "number": 19,
+          "title": "도깨비와 개암",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-20",
+          "number": 20,
+          "title": "젊어지는 샘물",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-21",
+          "number": 21,
+          "title": "방아 찧는 호랑이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-22",
+          "number": 22,
+          "title": "도깨비감투",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-23",
+          "number": 23,
+          "title": "개와 고양이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-24",
+          "number": 24,
+          "title": "신통한 점괘",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-25",
+          "number": 25,
+          "title": "도깨비가 준 보물",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-26",
+          "number": 26,
+          "title": "두더지 딸 신랑감 찾기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-27",
+          "number": 27,
+          "title": "청개구리",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-28",
+          "number": 28,
+          "title": "소가 된 게으름뱅이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-29",
+          "number": 29,
+          "title": "금도끼와 은도끼",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-30",
+          "number": 30,
+          "title": "멸치의 꿈",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-31",
+          "number": 31,
+          "title": "저승에 있는 곳간",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-32",
+          "number": 32,
+          "title": "재주 많은 세 형제",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-33",
+          "number": 33,
+          "title": "팥죽 할머니와 호랑이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-34",
+          "number": 34,
+          "title": "망주석 재판",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-35",
+          "number": 35,
+          "title": "며느릿감 시험",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-36",
+          "number": 36,
+          "title": "시르름 삐죽 할라뿡",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-37",
+          "number": 37,
+          "title": "호랑이 잡은 토끼",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-38",
+          "number": 38,
+          "title": "삼 년 고개",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-39",
+          "number": 39,
+          "title": "동물들의 나이 자랑",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-40",
+          "number": 40,
+          "title": "냄새 맡은 값",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-41",
+          "number": 41,
+          "title": "별주부전",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-42",
+          "number": 42,
+          "title": "토끼의 재판",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-43",
+          "number": 43,
+          "title": "꿀강아지 똥강아지",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-44",
+          "number": 44,
+          "title": "박박 바가지",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-45",
+          "number": 45,
+          "title": "강아지 꿀꺽 호랑이 줄줄",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-46",
+          "number": 46,
+          "title": "혹부리 영감",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "magic-jar-48",
+          "number": 48,
+          "title": "자린고비와 달랑곱재기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-49",
+          "number": 49,
+          "title": "호랑이와 곶감",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-50",
+          "number": 50,
+          "title": "우렁이 각시",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-51",
+          "number": 51,
+          "title": "금을 버린 형와 아우",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-52",
+          "number": 52,
+          "title": "백일홍 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-53",
+          "number": 53,
+          "title": "호랑이 등에 탄 효자",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-54",
+          "number": 54,
+          "title": "효녀 심청",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-55",
+          "number": 55,
+          "title": "견우와 직녀",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-56",
+          "number": 56,
+          "title": "두고도거지",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-57",
+          "number": 57,
+          "title": "오세암",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-58",
+          "number": 58,
+          "title": "백두산 장생초",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-59",
+          "number": 59,
+          "title": "손톱 먹은 들쥐",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-60",
+          "number": 60,
+          "title": "방귀 시합",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-61",
+          "number": 61,
+          "title": "황새의 꽁지",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-62",
+          "number": 62,
+          "title": "여우 누이",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-63",
+          "number": 63,
+          "title": "하늘에 있는 밭",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-64",
+          "number": 64,
+          "title": "풀죽새 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-65",
+          "number": 65,
+          "title": "할미꽃 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-66",
+          "number": 66,
+          "title": "소나기와 소내기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-67",
+          "number": 67,
+          "title": "교과서 고사성어 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-68",
+          "number": 68,
+          "title": "교과서 속담 이야기",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-69",
+          "number": 69,
+          "title": "교과서 전래 동요",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-70",
+          "number": 70,
+          "title": "교과서 전래 동화 1~2 학년",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-71",
+          "number": 71,
+          "title": "교과서 전래 동화 3~4학년",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-72",
+          "number": 72,
+          "title": "교과서 전래 동화 5~6학년",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-73",
+          "number": 73,
+          "title": "우리 신화 이야기 1",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-74",
+          "number": 74,
+          "title": "우리 신화 이야기 2",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-75",
+          "number": 75,
+          "title": "열두 띠 이야기 1",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-76",
+          "number": 76,
+          "title": "열두 띠 이야기 2",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-77",
+          "number": 77,
+          "title": "팔도 전설 이야기 1",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-78",
+          "number": 78,
+          "title": "팔도 전설 이야기 2",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-79",
+          "number": 79,
+          "title": "우리 소설 이야기 1",
+          "owned": true
+        },
+        {
+          "id": "magic-jar-80",
+          "number": 80,
+          "title": "우리 소설 이야기 2",
+          "owned": true
+        }
+      ]
+    },
+    {
+      "key": "octopus-bread",
+      "name": "문어빵",
+      "emoji": "🐙",
+      "color": "#e87ba4",
+      "books": [
+        {
+          "id": "octopus-bread-1",
+          "number": 1,
+          "title": "뉴스를 시작합시다!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-2",
+          "number": 2,
+          "title": "부르노 탐정의 범인 찾기",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-3",
+          "number": 3,
+          "title": "생쥐 페리의 이야기 여행",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-4",
+          "number": 4,
+          "title": "개성 만점 친구들",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-5",
+          "number": 5,
+          "title": "로아의 심부름",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-6",
+          "number": 6,
+          "title": "몽몽이의 선택",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-7",
+          "number": 7,
+          "title": "말복이와 번쩍 딸기",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-8",
+          "number": 8,
+          "title": "최고의 집은 어디에?",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-9",
+          "number": 9,
+          "title": "우리는 복면 가족",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-10",
+          "number": 10,
+          "title": "카트의 세상 구경",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-11",
+          "number": 11,
+          "title": "돌멩이 특공대가 나가신다!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-12",
+          "number": 12,
+          "title": "공룡 할아버지의 비밀",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-13",
+          "number": 13,
+          "title": "도와줘요, 닥터 고!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-14",
+          "number": 14,
+          "title": "우린 친구니까!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-15",
+          "number": 15,
+          "title": "굴개, 탐험을 떠나다!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-16",
+          "number": 16,
+          "title": "내가 알려 줄게!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-17",
+          "number": 17,
+          "title": "더위, 저리 가!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-18",
+          "number": 18,
+          "title": "우리 마을이 이상해",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-19",
+          "number": 19,
+          "title": "우당탕탕, 책가방들의 학교생활",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-20",
+          "number": 20,
+          "title": "우리 삼촌은 영웅맨",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-21",
+          "number": 21,
+          "title": "정원이의 특별한 모자",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-22",
+          "number": 22,
+          "title": "오이르 빼 주세요!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-23",
+          "number": 23,
+          "title": "달리와 밤피라 씨",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-24",
+          "number": 24,
+          "title": "코코섬을 지켜라!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-25",
+          "number": 25,
+          "title": "푸른 기와집 이야기",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-26",
+          "number": 26,
+          "title": "웨델 아저씨의 기막힌 하루",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-27",
+          "number": 27,
+          "title": "므왕가의 오해",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-28",
+          "number": 28,
+          "title": "무서운 늑대 인간은 싫어!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-29",
+          "number": 29,
+          "title": "번개의 멋진 날",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-30",
+          "number": 30,
+          "title": "미오와 거북목 가족",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-31",
+          "number": 31,
+          "title": "생쥐들의 좌충우돌 바다 여행",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-32",
+          "number": 32,
+          "title": "말말말 구조대 출동!",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-33",
+          "number": 33,
+          "title": "100층에 뭐가 있을까?",
+          "owned": true
+        },
+        {
+          "id": "octopus-bread-34",
+          "number": 34,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-35",
+          "number": 35,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-36",
+          "number": 36,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-37",
+          "number": 37,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-38",
+          "number": 38,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-39",
+          "number": 39,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-40",
+          "number": 40,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-41",
+          "number": 41,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-42",
+          "number": 42,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-43",
+          "number": 43,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-44",
+          "number": 44,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-45",
+          "number": 45,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-46",
+          "number": 46,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-48",
+          "number": 48,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-49",
+          "number": 49,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "octopus-bread-50",
+          "number": 50,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "story-house",
+      "name": "술술이 책방",
+      "emoji": "📖",
+      "color": "#e34948",
+      "books": [
+        {
+          "id": "story-house-1",
+          "number": 1,
+          "title": "나도 아직 어려!",
+          "owned": true
+        },
+        {
+          "id": "story-house-2",
+          "number": 2,
+          "title": "나중에 가족",
+          "owned": true
+        },
+        {
+          "id": "story-house-3",
+          "number": 3,
+          "title": "이상한 나라 쿠카그나",
+          "owned": true
+        },
+        {
+          "id": "story-house-4",
+          "number": 4,
+          "title": "까마귀 자전거",
+          "owned": true
+        },
+        {
+          "id": "story-house-5",
+          "number": 5,
+          "title": "신의 아이 고디",
+          "owned": true
+        },
+        {
+          "id": "story-house-6",
+          "number": 6,
+          "title": "모래놀이 친구",
+          "owned": true
+        },
+        {
+          "id": "story-house-7",
+          "number": 7,
+          "title": "깜이와 이빨 귀신",
+          "owned": true
+        },
+        {
+          "id": "story-house-8",
+          "number": 8,
+          "title": "그린홀",
+          "owned": true
+        },
+        {
+          "id": "story-house-9",
+          "number": 9,
+          "title": "그린이와 초록이",
+          "owned": true
+        },
+        {
+          "id": "story-house-10",
+          "number": 10,
+          "title": "나보고 혼자 자라고?",
+          "owned": true
+        },
+        {
+          "id": "story-house-11",
+          "number": 11,
+          "title": "나그네와 선비들",
+          "owned": true
+        },
+        {
+          "id": "story-house-12",
+          "number": 12,
+          "title": "마법의 우체통",
+          "owned": true
+        },
+        {
+          "id": "story-house-13",
+          "number": 13,
+          "title": "망고와 슈슈",
+          "owned": true
+        },
+        {
+          "id": "story-house-14",
+          "number": 14,
+          "title": "숙제를 먹어 버려, 꿀꺽!",
+          "owned": true
+        },
+        {
+          "id": "story-house-15",
+          "number": 15,
+          "title": "코딱지 공주",
+          "owned": true
+        },
+        {
+          "id": "story-house-16",
+          "number": 16,
+          "title": "선생님은 여덟 살",
+          "owned": true
+        },
+        {
+          "id": "story-house-17",
+          "number": 17,
+          "title": "아주 특별한 자석 마그",
+          "owned": true
+        },
+        {
+          "id": "story-house-18",
+          "number": 18,
+          "title": "우리 집에 거북이가 왔다",
+          "owned": true
+        },
+        {
+          "id": "story-house-19",
+          "number": 19,
+          "title": "우리 엄마는 무명 가수",
+          "owned": true
+        },
+        {
+          "id": "story-house-20",
+          "number": 20,
+          "title": "나도 분홍이 좋아",
+          "owned": true
+        },
+        {
+          "id": "story-house-21",
+          "number": 21,
+          "title": "성주신도 모를 거야",
+          "owned": true
+        },
+        {
+          "id": "story-house-22",
+          "number": 22,
+          "title": "기분 좋아 라면",
+          "owned": true
+        },
+        {
+          "id": "story-house-23",
+          "number": 23,
+          "title": "왕자님의 한글 편자",
+          "owned": true
+        },
+        {
+          "id": "story-house-24",
+          "number": 24,
+          "title": "오방내씨의 스마트폰",
+          "owned": true
+        },
+        {
+          "id": "story-house-25",
+          "number": 25,
+          "title": "초코 마녀",
+          "owned": true
+        },
+        {
+          "id": "story-house-26",
+          "number": 26,
+          "title": "어젯밤 구리구리 시장에서",
+          "owned": true
+        },
+        {
+          "id": "story-house-27",
+          "number": 27,
+          "title": "얼굴 없는 가수 라라",
+          "owned": true
+        },
+        {
+          "id": "story-house-28",
+          "number": 28,
+          "title": "기묘한 할머니의 비밀스러운 취미 생활",
+          "owned": true
+        },
+        {
+          "id": "story-house-29",
+          "number": 29,
+          "title": "수집가 재재와 나무조각",
+          "owned": true
+        },
+        {
+          "id": "story-house-30",
+          "number": 30,
+          "title": "수집가 재재와 고양이 단추",
+          "owned": true
+        },
+        {
+          "id": "story-house-31",
+          "number": 31,
+          "title": "내 친구 히바",
+          "owned": true
+        },
+        {
+          "id": "story-house-32",
+          "number": 32,
+          "title": "완벽한 생일 파티",
+          "owned": true
+        },
+        {
+          "id": "story-house-33",
+          "number": 33,
+          "title": "등골이 오싹해지는 법",
+          "owned": true
+        },
+        {
+          "id": "story-house-34",
+          "number": 34,
+          "title": "천하제일 방귀 시합",
+          "owned": true
+        },
+        {
+          "id": "story-house-35",
+          "number": 35,
+          "title": "루다 아줌마의 마카롱 가게",
+          "owned": true
+        },
+        {
+          "id": "story-house-36",
+          "number": 36,
+          "title": "우리 아빠는 소파",
+          "owned": true
+        },
+        {
+          "id": "story-house-37",
+          "number": 37,
+          "title": "인공 지능 경찰 마크",
+          "owned": true
+        },
+        {
+          "id": "story-house-38",
+          "number": 38,
+          "title": "루비옹 마을에서 생긴 일",
+          "owned": true
+        },
+        {
+          "id": "story-house-39",
+          "number": 39,
+          "title": "꿈꾸는 구두",
+          "owned": true
+        },
+        {
+          "id": "story-house-40",
+          "number": 40,
+          "title": "덜컹덜컹 바닷가 마을 빵차",
+          "owned": true
+        },
+        {
+          "id": "story-house-41",
+          "number": 41,
+          "title": "깔깔깔 말놀이 동시",
+          "owned": true
+        },
+        {
+          "id": "story-house-42",
+          "number": 42,
+          "title": "술술술 교과서 동시",
+          "owned": true
+        },
+        {
+          "id": "story-house-43",
+          "number": 43,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-44",
+          "number": 44,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-45",
+          "number": 45,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-46",
+          "number": 46,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-48",
+          "number": 48,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-49",
+          "number": 49,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "story-house-50",
+          "number": 50,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "inspiring-people",
+      "name": "한걸음 먼저 인물",
+      "emoji": "🌟",
+      "color": "#0d8a8a",
+      "books": [
+        {
+          "id": "inspiring-people-1",
+          "number": 1,
+          "title": "가우디",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-2",
+          "number": 2,
+          "title": "샤넬",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-3",
+          "number": 3,
+          "title": "김순권",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-4",
+          "number": 4,
+          "title": "마티스",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-5",
+          "number": 5,
+          "title": "베토벤",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-6",
+          "number": 6,
+          "title": "한나 파를로바",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-7",
+          "number": 7,
+          "title": "안데르센",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-8",
+          "number": 8,
+          "title": "제인 구달",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-9",
+          "number": 9,
+          "title": "이용남",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-10",
+          "number": 10,
+          "title": "찰스 다윈",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-11",
+          "number": 11,
+          "title": "닐 암스트롱",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-12",
+          "number": 12,
+          "title": "갈릴레이",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-13",
+          "number": 13,
+          "title": "파브르",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-14",
+          "number": 14,
+          "title": "마리 퀴리",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-15",
+          "number": 15,
+          "title": "세종",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-16",
+          "number": 16,
+          "title": "에이다 러브레이스",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-17",
+          "number": 17,
+          "title": "에디슨",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-18",
+          "number": 18,
+          "title": "스티브 잡스",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-19",
+          "number": 19,
+          "title": "장영실",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-20",
+          "number": 20,
+          "title": "라이트 형제",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-21",
+          "number": 21,
+          "title": "김정호",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-22",
+          "number": 22,
+          "title": "섀클턴",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-23",
+          "number": 23,
+          "title": "메시",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-24",
+          "number": 24,
+          "title": "링컨",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-25",
+          "number": 25,
+          "title": "왕가리 마타이",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-26",
+          "number": 26,
+          "title": "이종욱",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-27",
+          "number": 27,
+          "title": "워런버핏",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-28",
+          "number": 28,
+          "title": "장기려",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-29",
+          "number": 29,
+          "title": "이태영",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-30",
+          "number": 30,
+          "title": "이순신",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-31",
+          "number": 31,
+          "title": "자동차 회사",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-32",
+          "number": 32,
+          "title": "종합 병원",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-33",
+          "number": 33,
+          "title": "공항",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-34",
+          "number": 34,
+          "title": "디지털 엔터테이먼트 회사",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-35",
+          "number": 35,
+          "title": "박물관",
+          "owned": true
+        },
+        {
+          "id": "inspiring-people-36",
+          "number": 36,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-37",
+          "number": 37,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-38",
+          "number": 38,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-39",
+          "number": 39,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-40",
+          "number": 40,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-41",
+          "number": 41,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-42",
+          "number": 42,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-43",
+          "number": 43,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-44",
+          "number": 44,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-45",
+          "number": 45,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-46",
+          "number": 46,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-47",
+          "number": 47,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-48",
+          "number": 48,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-49",
+          "number": 49,
+          "title": "",
+          "owned": false
+        },
+        {
+          "id": "inspiring-people-50",
+          "number": 50,
+          "title": "",
+          "owned": false
+        }
+      ]
+    },
+    {
+      "key": "body-explorer",
+      "name": "인체 탐험대",
+      "emoji": "🫀",
+      "color": "#8a3a6b",
+      "books": [
+        {
+          "id": "body-explorer-1",
+          "number": 1,
+          "title": "쭈글쭈글 뇌는 참 신기해!",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-2",
+          "number": 2,
+          "title": "반디꽃 안과의 비밀 정원",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-3",
+          "number": 3,
+          "title": "활짝 웃는 코 훌쩍 우는 코",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-4",
+          "number": 4,
+          "title": "내 귀가 간질간질",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-5",
+          "number": 5,
+          "title": "이가 아파서 그런 거야",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-6",
+          "number": 6,
+          "title": "아이스크림 도둑이 배탈 났어!",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-7",
+          "number": 7,
+          "title": "요미 왕자의 심장이 쿵쿵!",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-8",
+          "number": 8,
+          "title": "앗, 뼈에 금이 갔어!",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-9",
+          "number": 9,
+          "title": "다루 삼촌네 쫀쫀 피부과",
+          "owned": true
+        },
+        {
+          "id": "body-explorer-10",
+          "number": 10,
+          "title": "귀여운 동생이 생길 거래요",
+          "owned": true
+        }
+      ]
+    },
+    {
+      "key": "little-economy",
+      "name": "마이 리틀 경제동화",
+      "emoji": "💰",
+      "color": "#7a6a1a",
+      "books": [
+        {
+          "id": "little-economy-1",
+          "number": 1,
+          "title": "용돈 더 주세요",
+          "owned": true
+        },
+        {
+          "id": "little-economy-2",
+          "number": 2,
+          "title": "머니머니배낭은 토리에게 딱이야",
+          "owned": true
+        },
+        {
+          "id": "little-economy-3",
+          "number": 3,
+          "title": "토리네 식빵 가게",
+          "owned": true
+        },
+        {
+          "id": "little-economy-4",
+          "number": 4,
+          "title": "피피의 꿈 통장",
+          "owned": true
+        },
+        {
+          "id": "little-economy-5",
+          "number": 5,
+          "title": "딱지 살까요? 딱지 팔까요?",
+          "owned": true
+        },
+        {
+          "id": "little-economy-6",
+          "number": 6,
+          "title": "피피는 해피 가든의 사장님",
+          "owned": true
+        },
+        {
+          "id": "little-economy-7",
+          "number": 7,
+          "title": "앨리와 빨강 크레파스",
+          "owned": true
+        },
+        {
+          "id": "little-economy-8",
+          "number": 8,
+          "title": "우리는 모두 부자야",
+          "owned": true
+        },
+        {
+          "id": "little-economy-9",
+          "number": 9,
+          "title": "앨리의 마법 카드",
+          "owned": true
+        }
+      ]
+    }
+  ],
+  "requiredReading": {
+    "key": "required-reading",
+    "name": "필독서 리스트",
+    "emoji": "📚",
+    "color": "#2a78d6",
+    "levels": [
+      "씨앗",
+      "새싹",
+      "꽃"
+    ],
+    "books": [
+      {
+        "id": "required-씨앗-1",
+        "level": "씨앗",
+        "number": 1,
+        "title": "간식을 먹으러 온 호랑이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-2",
+        "level": "씨앗",
+        "number": 2,
+        "title": "검피 아저씨의 뱃놀이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-3",
+        "level": "씨앗",
+        "number": 3,
+        "title": "곰 사냥을 떠나자",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-4",
+        "level": "씨앗",
+        "number": 4,
+        "title": "구름 놀이",
+        "genre": "예술",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-5",
+        "level": "씨앗",
+        "number": 5,
+        "title": "구름빵",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-6",
+        "level": "씨앗",
+        "number": 6,
+        "title": "꽁꽁꽁",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-7",
+        "level": "씨앗",
+        "number": 7,
+        "title": "돼지책",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-8",
+        "level": "씨앗",
+        "number": 8,
+        "title": "신발 신은 강아지",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-9",
+        "level": "씨앗",
+        "number": 9,
+        "title": "파랑 오리",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-10",
+        "level": "씨앗",
+        "number": 10,
+        "title": "호랑이를 죽이는 방법",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-11",
+        "level": "씨앗",
+        "number": 11,
+        "title": "나무처럼",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-12",
+        "level": "씨앗",
+        "number": 12,
+        "title": "내 이름은 푸른점",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-13",
+        "level": "씨앗",
+        "number": 13,
+        "title": "노스애르사애",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-14",
+        "level": "씨앗",
+        "number": 14,
+        "title": "눈 오는 날",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-15",
+        "level": "씨앗",
+        "number": 15,
+        "title": "도대체 그 동안 무슨 일이 일어났을까?",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-16",
+        "level": "씨앗",
+        "number": 16,
+        "title": "바바빠빠",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-17",
+        "level": "씨앗",
+        "number": 17,
+        "title": "붉은 여우 아저씨",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-18",
+        "level": "씨앗",
+        "number": 18,
+        "title": "언제까지나 너를 사랑해",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-19",
+        "level": "씨앗",
+        "number": 19,
+        "title": "엄마 아빠 기다리신다",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-20",
+        "level": "씨앗",
+        "number": 20,
+        "title": "우리는 친구",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-21",
+        "level": "씨앗",
+        "number": 21,
+        "title": "나의 잠을 깨우는 세상에서 가장 행복한 소리",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-22",
+        "level": "씨앗",
+        "number": 22,
+        "title": "엄마 마중",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-23",
+        "level": "씨앗",
+        "number": 23,
+        "title": "이제 숲은 완벽해!",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-24",
+        "level": "씨앗",
+        "number": 24,
+        "title": "콩 한 알과 송아지",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-씨앗-25",
+        "level": "씨앗",
+        "number": 25,
+        "title": "플라스틱 섬",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-1",
+        "level": "새싹",
+        "number": 1,
+        "title": "고릴라",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-2",
+        "level": "새싹",
+        "number": 2,
+        "title": "모르는 척 공주",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-3",
+        "level": "새싹",
+        "number": 3,
+        "title": "바보 사냥꾼과 멋진 사냥개",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-4",
+        "level": "새싹",
+        "number": 4,
+        "title": "봄이다",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-5",
+        "level": "새싹",
+        "number": 5,
+        "title": "사자삼촌",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-6",
+        "level": "새싹",
+        "number": 6,
+        "title": "소금을 만드는 맷돌",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-7",
+        "level": "새싹",
+        "number": 7,
+        "title": "야, 우리 기차에서 내려!",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-8",
+        "level": "새싹",
+        "number": 8,
+        "title": "엄마 화났다",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-9",
+        "level": "새싹",
+        "number": 9,
+        "title": "위대한 청소부",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-10",
+        "level": "새싹",
+        "number": 10,
+        "title": "할머니의 여름휴가",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-11",
+        "level": "새싹",
+        "number": 11,
+        "title": "강아지 복실이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-12",
+        "level": "새싹",
+        "number": 12,
+        "title": "견우 직녀",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-13",
+        "level": "새싹",
+        "number": 13,
+        "title": "고 녀석 맛있겠다",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-14",
+        "level": "새싹",
+        "number": 14,
+        "title": "도깨비를 빨아 버린 우리 엄마",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-15",
+        "level": "새싹",
+        "number": 15,
+        "title": "멍멍 의사 선생님",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-16",
+        "level": "새싹",
+        "number": 16,
+        "title": "발가락",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-17",
+        "level": "새싹",
+        "number": 17,
+        "title": "삼거리 버스 정류장",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-18",
+        "level": "새싹",
+        "number": 18,
+        "title": "신기한 독",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-19",
+        "level": "새싹",
+        "number": 19,
+        "title": "짧은 귀 토끼",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-20",
+        "level": "새싹",
+        "number": 20,
+        "title": "할머니의 용궁 여행",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-21",
+        "level": "새싹",
+        "number": 21,
+        "title": "내 사랑 뿌뿌",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-22",
+        "level": "새싹",
+        "number": 22,
+        "title": "세상에서 가장 잘 웃는 용",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-23",
+        "level": "새싹",
+        "number": 23,
+        "title": "오싹오싹 팬티",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-24",
+        "level": "새싹",
+        "number": 24,
+        "title": "우렁 각시",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-25",
+        "level": "새싹",
+        "number": 25,
+        "title": "이상한 엄마",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-26",
+        "level": "새싹",
+        "number": 26,
+        "title": "작은 눈덩이의 꿈",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-27",
+        "level": "새싹",
+        "number": 27,
+        "title": "제랄다와 거인",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-28",
+        "level": "새싹",
+        "number": 28,
+        "title": "종이 봉지 공주",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-29",
+        "level": "새싹",
+        "number": 29,
+        "title": "쿵쿵 아파트",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-30",
+        "level": "새싹",
+        "number": 30,
+        "title": "크릭터",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-31",
+        "level": "새싹",
+        "number": 31,
+        "title": "도둑 떼와 꾀 많은 꼬마",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-32",
+        "level": "새싹",
+        "number": 32,
+        "title": "똥벼락",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-33",
+        "level": "새싹",
+        "number": 33,
+        "title": "멋쟁이 낸시의 눈 오는 날",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-34",
+        "level": "새싹",
+        "number": 34,
+        "title": "반쪽이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-35",
+        "level": "새싹",
+        "number": 35,
+        "title": "오늘 내 기분은",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-36",
+        "level": "새싹",
+        "number": 36,
+        "title": "오른발, 왼발",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-37",
+        "level": "새싹",
+        "number": 37,
+        "title": "욕심부리지 말지어다",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-38",
+        "level": "새싹",
+        "number": 38,
+        "title": "일곱 마리 눈먼 생쥐",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-39",
+        "level": "새싹",
+        "number": 39,
+        "title": "치과의사 드소토 선생님",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-40",
+        "level": "새싹",
+        "number": 40,
+        "title": "파란 의자",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-41",
+        "level": "새싹",
+        "number": 41,
+        "title": "내 동생 싸게 팔아요",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-42",
+        "level": "새싹",
+        "number": 42,
+        "title": "도깨비 방망이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-43",
+        "level": "새싹",
+        "number": 43,
+        "title": "딸랑새",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-44",
+        "level": "새싹",
+        "number": 44,
+        "title": "무지개 까마귀",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-45",
+        "level": "새싹",
+        "number": 45,
+        "title": "신골 총각",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-46",
+        "level": "새싹",
+        "number": 46,
+        "title": "세 강도",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-47",
+        "level": "새싹",
+        "number": 47,
+        "title": "재주 많은 다섯 친구",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-48",
+        "level": "새싹",
+        "number": 48,
+        "title": "제가 잡아먹어도 될까요?",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-49",
+        "level": "새싹",
+        "number": 49,
+        "title": "조금 특별한 아이",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-50",
+        "level": "새싹",
+        "number": 50,
+        "title": "퐁퐁이와 툴툴이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-51",
+        "level": "새싹",
+        "number": 51,
+        "title": "그래요 정말 그래요!",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-52",
+        "level": "새싹",
+        "number": 52,
+        "title": "기차 여행은 즐거워요",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-53",
+        "level": "새싹",
+        "number": 53,
+        "title": "깊은 밤 부엌에서",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-54",
+        "level": "새싹",
+        "number": 54,
+        "title": "나무는 좋다",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-55",
+        "level": "새싹",
+        "number": 55,
+        "title": "도서관",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-56",
+        "level": "새싹",
+        "number": 56,
+        "title": "손 큰 할머니의 만두 만들기",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-57",
+        "level": "새싹",
+        "number": 57,
+        "title": "우리 엄마",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-58",
+        "level": "새싹",
+        "number": 58,
+        "title": "우리 할아버지",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-59",
+        "level": "새싹",
+        "number": 59,
+        "title": "조금만 기다려 봐",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-60",
+        "level": "새싹",
+        "number": 60,
+        "title": "훨훨 간다",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-61",
+        "level": "새싹",
+        "number": 61,
+        "title": "고무신 기차",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-62",
+        "level": "새싹",
+        "number": 62,
+        "title": "길 아저씨 손 아저씨",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-63",
+        "level": "새싹",
+        "number": 63,
+        "title": "마음아 안녕",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-64",
+        "level": "새싹",
+        "number": 64,
+        "title": "소피가 속상하면, 너무너무 속상하면",
+        "genre": "예술",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-65",
+        "level": "새싹",
+        "number": 65,
+        "title": "어멍 가옵서",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-66",
+        "level": "새싹",
+        "number": 66,
+        "title": "엄마 까투리",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-67",
+        "level": "새싹",
+        "number": 67,
+        "title": "조금 부족해도 괜찮아",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-68",
+        "level": "새싹",
+        "number": 68,
+        "title": "책",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-69",
+        "level": "새싹",
+        "number": 69,
+        "title": "책 냄새가 제일 좋아!",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-70",
+        "level": "새싹",
+        "number": 70,
+        "title": "프레드릭",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-71",
+        "level": "새싹",
+        "number": 71,
+        "title": "꽃가마 탄 호랑이",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-72",
+        "level": "새싹",
+        "number": 72,
+        "title": "마녀 위니가 윌버를 처음 만난 날",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-73",
+        "level": "새싹",
+        "number": 73,
+        "title": "양초귀신",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-74",
+        "level": "새싹",
+        "number": 74,
+        "title": "우리 서로 사랑할 때에",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-75",
+        "level": "새싹",
+        "number": 75,
+        "title": "지하철을 타고서",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-76",
+        "level": "새싹",
+        "number": 76,
+        "title": "커다란 크리스마스 트리가 있었는데",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-77",
+        "level": "새싹",
+        "number": 77,
+        "title": "크리스마스 선물",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-78",
+        "level": "새싹",
+        "number": 78,
+        "title": "호랑이 잡은 파리",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-새싹-79",
+        "level": "새싹",
+        "number": 79,
+        "title": "황소 아저씨",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-1",
+        "level": "꽃",
+        "number": 1,
+        "title": "거짓말 같은 이야기",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-2",
+        "level": "꽃",
+        "number": 2,
+        "title": "까막나라에서 온 삽사리",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-3",
+        "level": "꽃",
+        "number": 3,
+        "title": "도깨비와 범벅 장수",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-4",
+        "level": "꽃",
+        "number": 4,
+        "title": "민희네 집",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-5",
+        "level": "꽃",
+        "number": 5,
+        "title": "말도 안 돼!",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-6",
+        "level": "꽃",
+        "number": 6,
+        "title": "비 오는 날",
+        "genre": "과학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-7",
+        "level": "꽃",
+        "number": 7,
+        "title": "슈퍼 거북",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-8",
+        "level": "꽃",
+        "number": 8,
+        "title": "안녕, 가을",
+        "genre": "사회",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-9",
+        "level": "꽃",
+        "number": 9,
+        "title": "저승에 있는 곳간",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-10",
+        "level": "꽃",
+        "number": 10,
+        "title": "틀려도 괜찮아",
+        "genre": "인문",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-11",
+        "level": "꽃",
+        "number": 11,
+        "title": "괜찮을 거야",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-12",
+        "level": "꽃",
+        "number": 12,
+        "title": "나도 최고가 되고 싶어요",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-13",
+        "level": "꽃",
+        "number": 13,
+        "title": "바삭바삭 갈매기",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-14",
+        "level": "꽃",
+        "number": 14,
+        "title": "오소리네 집 꽃밭",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-15",
+        "level": "꽃",
+        "number": 15,
+        "title": "탁자는 탁자일 뿐일까?",
+        "genre": "문학",
+        "owned": true
+      },
+      {
+        "id": "required-꽃-16",
+        "level": "꽃",
+        "number": 16,
+        "title": "행복을 나르는 버스",
+        "genre": "사회",
+        "owned": true
+      }
+    ]
+  }
+}
