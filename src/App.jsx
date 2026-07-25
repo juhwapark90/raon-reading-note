@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import catalog from './data/catalog.json';
 import { useProgress } from './hooks/useProgress';
 import { useProfile } from './hooks/useProfile';
+import { useAutoReload } from './hooks/useAutoReload';
 import { countTotalProgress, todayStr } from './lib/progressUtils';
 import Sidebar from './components/Sidebar';
 import ProgressHero from './components/ProgressHero';
@@ -36,6 +37,7 @@ let cheerTimer = null;
 export default function App() {
   const { data, update, syncStatus, roomCode, joinRoom, leaveRoom } = useProgress();
   const { profile, isChild, selectProfile } = useProfile();
+  useAutoReload();
   const [activeKey, setActiveKey] = useState('home');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [toastMsg, setToastMsg] = useState('');

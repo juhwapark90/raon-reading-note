@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Regenerated at build time (see vite.config.js) to detect stale deploys
+public/version.json
+
 # Firebase config (contains project-specific keys; copy .env.example instead)
 .env
 .env.*

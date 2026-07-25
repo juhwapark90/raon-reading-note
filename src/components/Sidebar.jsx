@@ -44,6 +44,12 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
         <button
           className={`sidebar__item${activeKey === item.key ? ' sidebar__item--active' : ''}`}
           onClick={() => {
+            if (item.key === 'home') {
+              // A full reload, not just a client-side nav - the iPhone
+              // home-screen icon otherwise never re-fetches the latest deploy.
+              window.location.reload();
+              return;
+            }
             onSelect(item.key);
             onClose?.();
           }}
