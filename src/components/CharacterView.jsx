@@ -1,58 +1,55 @@
-import { useEffect, useRef } from 'react';
-import { CHARACTER_ITEMS, DEFAULT_FACE_ID } from '../data/characterItems';
+import { useMemo } from 'react';
+import { createAvatar } from '@dicebear/core';
+import { adventurer } from '@dicebear/collection';
+import { CHARACTER_ITEMS, DEFAULT_TRAITS } from '../data/characterItems';
 
-const ASSET_MODULES = import.meta.glob('../assets/character/*.png', { eager: true, import: 'default' });
-
-function assetUrl(file) {
-  const match = Object.entries(ASSET_MODULES).find(([path]) => path.endsWith('/' + file));
-  return match ? match[1] : null;
-}
-
-// "face" is the base layer (skin tone + eyes); the rest stack on top of it
-// in this order, later layers drawing over earlier ones.
-const LAYER_ORDER = ['face', 'bottom', 'shoes', 'top', 'earrings', 'hair', 'hat'];
-
-async function loadImage(src) {
-  const img = new Image();
-  img.src = src;
-  await img.decode();
-  return img;
+function resolveValue(slot, itemId) {
+  const item = CHARACTER_ITEMS.find((i) => i.id === itemId);
+  return item?.value;
 }
 
 export default function CharacterView({ equipped, size = 128 }) {
-  const canvasRef = useRef(null);
+  const dataUri = useMemo(() => {
+    const hair = resolveValue('hair', equipped?.hair) || DEFAULT_TRAITS.hair;
+    const hairColor = resolveValue('hairColor', equipped?.hairColor) || DEFAULT_TRAITS.hairColor;
+    const skinColor = resolveValue('skinColor', equipped?.skinColor) || DEFAULT_TRAITS.skinColor;
+    const eyes = resolveValue('eyes', equipped?.eyes) || DEFAULT_TRAITS.eyes;
+    const eyebrows = resolveValue('eyebrows', equipped?.eyebrows) || DEFAULT_TRAITS.eyebrows;
+    const mouth = resolveValue('mouth', equipped?.mouth) || DEFAULT_TRAITS.mouth;
+    const glasses = resolveValue('glasses', equipped?.glasses);
+    const earrings = resolveValue('earrings', equipped?.earrings);
 
-  const layerSrcs = LAYER_ORDER.map((slot) => (slot === 'face' ? equipped?.face || DEFAULT_FACE_ID : equipped?.[slot]))
-    .filter(Boolean)
-    .map((itemId) => CHARACTER_ITEMS.find((i) => i.id === itemId))
-    .filter(Boolean)
-    .map((item) => assetUrl(item.file));
-
-  useEffect(() => {
-    let cancelled = false;
-    const canvas = canvasRef.current;
-    if (!canvas) return undefined;
-    const ctx = canvas.getContext('2d');
-    ctx.imageSmoothingEnabled = false;
-
-    Promise.all(layerSrcs.map(loadImage)).then((imgs) => {
-      if (cancelled) return;
-      ctx.clearRect(0, 0, 64, 64);
-      for (const img of imgs) {
-        ctx.drawImage(img, 0, 0, 64, 64);
-      }
-    });
-
-    return () => {
-      cancelled = true;
+    const options = {
+      seed: 'raon',
+      hair: [hair],
+      hairColor: [hairColor],
+      skinColor: [skinColor],
+      eyes: [eyes],
+      eyebrows: [eyebrows],
+      mouth: [mouth],
+      featuresProbability: 0,
+      glassesProbability: glasses ? 100 : 0,
+      earringsProbability: earrings ? 100 : 0,
     };
-  }, [layerSrcs.join('|')]);
+    if (glasses) options.glasses = [glasses];
+    if (earrings) options.earrings = [earrings];
+
+    return createAvatar(adventurer, options).toDataUri();
+  }, [
+    equipped?.hair,
+    equipped?.hairColor,
+    equipped?.skinColor,
+    equipped?.eyes,
+    equipped?.eyebrows,
+    equipped?.mouth,
+    equipped?.glasses,
+    equipped?.earrings,
+  ]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      width={64}
-      height={64}
+    <img
+      src={dataUri}
+      alt=""
       className="character-view"
       style={{ width: size, height: size }}
     />

@@ -38,9 +38,9 @@ export default function CharacterShopView({ catalog, progress, isChild, onBuy, o
         ))}
       </div>
 
-      {activeSlot !== 'face' && equipped[activeSlot] && (
+      {equipped[activeSlot] && (
         <button className="character-shop__unequip" onClick={() => onUnequip(activeSlot)}>
-          현재 착용 아이템 벗기
+          기본으로 되돌리기
         </button>
       )}
 
@@ -71,7 +71,7 @@ export default function CharacterShopView({ catalog, progress, isChild, onBuy, o
           return (
             <div key={item.id} className={`shop-item-card${isEquipped ? ' shop-item-card--equipped' : ''}`}>
               <div className="character-item-preview">
-                <CharacterView equipped={{ [activeSlot]: item.id }} size={72} />
+                <CharacterView equipped={{ ...equipped, [activeSlot]: item.id }} size={72} />
               </div>
               <div className="shop-item-card__name">{item.name}</div>
               <button className="shop-item-card__btn" disabled={disabled} onClick={action}>
@@ -83,12 +83,10 @@ export default function CharacterShopView({ catalog, progress, isChild, onBuy, o
       </div>
 
       <p className="character-shop__credit">
-        캐릭터 아트: Liberated Pixel Cup 오픈소스 프로젝트 (CC-BY-SA 3.0 / GPL 3.0 / CC0) ·
-        전체 저작권 목록은 저장소의{' '}
-        <a href="https://github.com/juhwapark90/raon-reading-note/blob/main/CREDITS.md" target="_blank" rel="noreferrer">
-          CREDITS.md
+        캐릭터 아트: DiceBear "Adventurer" 스타일 (CC BY 4.0, ⓒ Lisa Wischofsky) ·{' '}
+        <a href="https://www.dicebear.com/styles/adventurer/" target="_blank" rel="noreferrer">
+          dicebear.com
         </a>
-        참고
       </p>
     </section>
   );

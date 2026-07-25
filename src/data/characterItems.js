@@ -1,84 +1,110 @@
-// Character dress-up items rendered from the Liberated Pixel Cup "Universal LPC
-// Spritesheet Character Generator" (https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator),
-// an open-source (CC-BY-SA 3.0 / GPL 3.0 / CC0) pixel-art asset set. Each PNG
-// here is a single front-facing ("Idle", south-facing) frame captured from
-// that generator's own renderer - see CREDITS.md for full per-item attribution.
+// Character customization is powered by DiceBear's "Adventurer" style
+// (https://www.dicebear.com/styles/adventurer/, CC BY 4.0, created by Lisa
+// Wischofsky). Each item here is a value for one independent trait (hair
+// style, hair color, eyes, eyebrows, mouth, skin tone, glasses, earrings) -
+// DiceBear renders the combination as a vector avatar at runtime, so there
+// are no pre-made images to manage.
 
-export const DEFAULT_FACE_ID = 'face-default';
+export const DEFAULT_TRAITS = {
+  hair: 'long01',
+  hairColor: '6a4e35',
+  skinColor: 'f2d3b1',
+  eyes: 'variant05',
+  eyebrows: 'variant03',
+  mouth: 'variant01',
+};
 
 export const CHARACTER_SLOTS = [
-  { key: 'face', label: '피부/눈', emoji: '🙂' },
   { key: 'hair', label: '헤어스타일', emoji: '💇‍♀️' },
-  { key: 'top', label: '상의/원피스', emoji: '👗' },
-  { key: 'bottom', label: '하의', emoji: '👖' },
-  { key: 'shoes', label: '신발', emoji: '👟' },
-  { key: 'hat', label: '모자', emoji: '🎩' },
-  { key: 'earrings', label: '액세서리', emoji: '💎' },
+  { key: 'hairColor', label: '헤어 색상', emoji: '🎨' },
+  { key: 'skinColor', label: '피부색', emoji: '🖐️' },
+  { key: 'eyes', label: '눈', emoji: '👀' },
+  { key: 'eyebrows', label: '눈썹', emoji: '〰️' },
+  { key: 'mouth', label: '입', emoji: '👄' },
+  { key: 'glasses', label: '안경', emoji: '🕶️' },
+  { key: 'earrings', label: '귀걸이', emoji: '💎' },
 ];
 
 export const CHARACTER_ITEMS = [
-  // face presets (skin tone + eye color combined) - the "기본" one is free
-  // and always owned, since it's also the base layer under everything else.
-  { id: 'face-default', slot: 'face', name: '기본', file: 'face-default.png', price: 0 },
-  { id: 'face-amber-blue', slot: 'face', name: '살구빛 피부 + 파란 눈', file: 'face-amber-blue.png', price: 25 },
-  { id: 'face-olive-green', slot: 'face', name: '올리브 피부 + 초록 눈', file: 'face-olive-green.png', price: 25 },
-  { id: 'face-bronze-brown', slot: 'face', name: '브론즈 피부 + 갈색 눈', file: 'face-bronze-brown.png', price: 25 },
-  { id: 'face-brown-brown', slot: 'face', name: '갈색 피부 + 갈색 눈', file: 'face-brown-brown.png', price: 25 },
-  { id: 'face-black', slot: 'face', name: '다크 피부', file: 'face-black.png', price: 25 },
-  { id: 'face-light-purple', slot: 'face', name: '밝은 피부 + 보라 눈', file: 'face-light-purple.png', price: 25 },
-  { id: 'face-light-gray', slot: 'face', name: '밝은 피부 + 회색 눈', file: 'face-light-gray.png', price: 25 },
+  // --- hair styles ---
+  { id: 'hair-short01', slot: 'hair', name: '짧은 단발 1', value: 'short01', price: 40 },
+  { id: 'hair-short05', slot: 'hair', name: '짧은 웨이브', value: 'short05', price: 40 },
+  { id: 'hair-short10', slot: 'hair', name: '짧은 컬', value: 'short10', price: 40 },
+  { id: 'hair-short14', slot: 'hair', name: '뾰족 단발', value: 'short14', price: 40 },
+  { id: 'hair-short18', slot: 'hair', name: '양갈래 번치', value: 'short18', price: 45 },
+  { id: 'hair-long01', slot: 'hair', name: '둥근 번 머리', value: 'long01', price: 45 },
+  { id: 'hair-long05', slot: 'hair', name: '풍성한 웨이브', value: 'long05', price: 50 },
+  { id: 'hair-long10', slot: 'hair', name: '탑 번 머리', value: 'long10', price: 45 },
+  { id: 'hair-long13', slot: 'hair', name: '리본 삐삐머리', value: 'long13', price: 50 },
+  { id: 'hair-long17', slot: 'hair', name: '옆으로 웨이브', value: 'long17', price: 50 },
+  { id: 'hair-long20', slot: 'hair', name: '긴 웨이브', value: 'long20', price: 55 },
+  { id: 'hair-long24', slot: 'hair', name: '단발 웨이브', value: 'long24', price: 50 },
 
-  { id: 'hair-pigtails-pink', slot: 'hair', name: '삐삐머리 (핑크)', file: 'hair-pigtails-pink.png', price: 40 },
-  { id: 'hair-bunches-blonde', slot: 'hair', name: '양갈래 번치 (금발)', file: 'hair-bunches-blonde.png', price: 40 },
-  { id: 'hair-bunches-pink', slot: 'hair', name: '양갈래 번치 (핑크)', file: 'hair-bunches-pink.png', price: 40 },
-  { id: 'hair-ponytail-brown', slot: 'hair', name: '포니테일 (갈색)', file: 'hair-ponytail-brown.png', price: 50 },
-  { id: 'hair-ponytail-red', slot: 'hair', name: '포니테일 (빨강)', file: 'hair-ponytail-red.png', price: 50 },
-  { id: 'hair-long-black', slot: 'hair', name: '긴 생머리 (검정)', file: 'hair-long-black.png', price: 50 },
-  { id: 'hair-long-blonde', slot: 'hair', name: '긴 생머리 (금발)', file: 'hair-long-blonde.png', price: 50 },
-  { id: 'hair-bob-red', slot: 'hair', name: '단발머리 (빨강)', file: 'hair-bob-red.png', price: 40 },
-  { id: 'hair-bob-black', slot: 'hair', name: '단발머리 (검정)', file: 'hair-bob-black.png', price: 40 },
-  { id: 'hair-braid-platinum', slot: 'hair', name: '땋은머리 (은발)', file: 'hair-braid-platinum.png', price: 60 },
-  { id: 'hair-braid-brown', slot: 'hair', name: '땋은머리 (갈색)', file: 'hair-braid-brown.png', price: 60 },
-  { id: 'hair-pixie-brown', slot: 'hair', name: '픽시컷 (갈색)', file: 'hair-pixie-brown.png', price: 45 },
-  { id: 'hair-curly-black', slot: 'hair', name: '긴 곱슬머리 (검정)', file: 'hair-curly-black.png', price: 55 },
-  { id: 'hair-wavy-brown', slot: 'hair', name: '웨이브 머리 (갈색)', file: 'hair-wavy-brown.png', price: 55 },
+  // --- hair colors ---
+  { id: 'haircolor-ac6511', slot: 'hairColor', name: '오번', value: 'ac6511', price: 25 },
+  { id: 'haircolor-cb6820', slot: 'hairColor', name: '오렌지', value: 'cb6820', price: 25 },
+  { id: 'haircolor-ab2a18', slot: 'hairColor', name: '빨강', value: 'ab2a18', price: 25 },
+  { id: 'haircolor-e5d7a3', slot: 'hairColor', name: '연한 금발', value: 'e5d7a3', price: 20 },
+  { id: 'haircolor-b9a05f', slot: 'hairColor', name: '금발', value: 'b9a05f', price: 20 },
+  { id: 'haircolor-796a45', slot: 'hairColor', name: '애쉬 브라운', value: '796a45', price: 20 },
+  { id: 'haircolor-562306', slot: 'hairColor', name: '다크 브라운', value: '562306', price: 20 },
+  { id: 'haircolor-0e0e0e', slot: 'hairColor', name: '검정', value: '0e0e0e', price: 20 },
+  { id: 'haircolor-afafaf', slot: 'hairColor', name: '실버 그레이', value: 'afafaf', price: 25 },
+  { id: 'haircolor-3eac2c', slot: 'hairColor', name: '초록', value: '3eac2c', price: 30 },
+  { id: 'haircolor-85c2c6', slot: 'hairColor', name: '민트', value: '85c2c6', price: 30 },
+  { id: 'haircolor-dba3be', slot: 'hairColor', name: '핑크', value: 'dba3be', price: 30 },
+  { id: 'haircolor-592454', slot: 'hairColor', name: '보라', value: '592454', price: 30 },
 
-  { id: 'top-bodice-pink', slot: 'top', name: '보디스 원피스 (핑크)', file: 'top-bodice-pink.png', price: 70 },
-  { id: 'top-bodice-sky', slot: 'top', name: '보디스 원피스 (하늘)', file: 'top-bodice-sky.png', price: 70 },
-  { id: 'top-bodice-white', slot: 'top', name: '보디스 원피스 (하양)', file: 'top-bodice-white.png', price: 70 },
-  { id: 'top-sash-sky', slot: 'top', name: '새시 원피스 (하늘)', file: 'top-sash-sky.png', price: 70 },
-  { id: 'top-sash-pink', slot: 'top', name: '새시 원피스 (핑크)', file: 'top-sash-pink.png', price: 70 },
-  { id: 'top-slit-purple', slot: 'top', name: '슬릿 원피스 (보라)', file: 'top-slit-purple.png', price: 80 },
-  { id: 'top-slit-teal', slot: 'top', name: '슬릿 원피스 (틸)', file: 'top-slit-teal.png', price: 80 },
-  { id: 'top-blouse-yellow', slot: 'top', name: '블라우스 (노랑)', file: 'top-blouse-yellow.png', price: 60 },
-  { id: 'top-blouse-white', slot: 'top', name: '블라우스 (하양)', file: 'top-blouse-white.png', price: 60 },
-  { id: 'top-kimono-red', slot: 'top', name: '기모노 (빨강)', file: 'top-kimono-red.png', price: 75 },
+  // --- skin tones ---
+  { id: 'skin-ecad80', slot: 'skinColor', name: '살구빛 피부', value: 'ecad80', price: 20 },
+  { id: 'skin-9e5622', slot: 'skinColor', name: '갈색 피부', value: '9e5622', price: 20 },
+  { id: 'skin-763900', slot: 'skinColor', name: '다크 피부', value: '763900', price: 20 },
 
-  { id: 'bottom-belle-pink', slot: 'bottom', name: '벨 스커트 (핑크)', file: 'bottom-belle-pink.png', price: 50 },
-  { id: 'bottom-belle-purple', slot: 'bottom', name: '벨 스커트 (보라)', file: 'bottom-belle-purple.png', price: 50 },
-  { id: 'bottom-plain-red', slot: 'bottom', name: '플레인 스커트 (빨강)', file: 'bottom-plain-red.png', price: 40 },
-  { id: 'bottom-plain-blue', slot: 'bottom', name: '플레인 스커트 (파랑)', file: 'bottom-plain-blue.png', price: 40 },
-  { id: 'bottom-pants-navy', slot: 'bottom', name: '팬츠 (네이비)', file: 'bottom-pants-navy.png', price: 40 },
-  { id: 'bottom-pants-black', slot: 'bottom', name: '팬츠 (검정)', file: 'bottom-pants-black.png', price: 40 },
+  // --- eyes ---
+  { id: 'eyes-variant01', slot: 'eyes', name: '눈 스타일 1', value: 'variant01', price: 20 },
+  { id: 'eyes-variant03', slot: 'eyes', name: '눈 스타일 2', value: 'variant03', price: 20 },
+  { id: 'eyes-variant07', slot: 'eyes', name: '눈 스타일 3', value: 'variant07', price: 20 },
+  { id: 'eyes-variant09', slot: 'eyes', name: '반짝이는 눈', value: 'variant09', price: 20 },
+  { id: 'eyes-variant11', slot: 'eyes', name: '눈 스타일 4', value: 'variant11', price: 20 },
+  { id: 'eyes-variant14', slot: 'eyes', name: '큰 눈', value: 'variant14', price: 20 },
+  { id: 'eyes-variant17', slot: 'eyes', name: '눈 스타일 5', value: 'variant17', price: 20 },
+  { id: 'eyes-variant20', slot: 'eyes', name: '윙크 눈', value: 'variant20', price: 20 },
+  { id: 'eyes-variant24', slot: 'eyes', name: '눈 스타일 6', value: 'variant24', price: 20 },
 
-  { id: 'shoes-basic-brown', slot: 'shoes', name: '기본 신발 (갈색)', file: 'shoes-basic-brown.png', price: 30 },
-  { id: 'shoes-basic-black', slot: 'shoes', name: '기본 신발 (검정)', file: 'shoes-basic-black.png', price: 30 },
-  { id: 'shoes-basic-white', slot: 'shoes', name: '기본 신발 (하양)', file: 'shoes-basic-white.png', price: 30 },
-  { id: 'shoes-boots-brown', slot: 'shoes', name: '부츠 (갈색)', file: 'shoes-boots-brown.png', price: 35 },
-  { id: 'shoes-boots-black', slot: 'shoes', name: '부츠 (검정)', file: 'shoes-boots-black.png', price: 35 },
+  // --- eyebrows ---
+  { id: 'eyebrows-variant01', slot: 'eyebrows', name: '눈썹 1', value: 'variant01', price: 15 },
+  { id: 'eyebrows-variant05', slot: 'eyebrows', name: '눈썹 2', value: 'variant05', price: 15 },
+  { id: 'eyebrows-variant07', slot: 'eyebrows', name: '눈썹 3', value: 'variant07', price: 15 },
+  { id: 'eyebrows-variant09', slot: 'eyebrows', name: '눈썹 4', value: 'variant09', price: 15 },
+  { id: 'eyebrows-variant12', slot: 'eyebrows', name: '눈썹 5', value: 'variant12', price: 15 },
 
-  { id: 'hat-bonnie-pink', slot: 'hat', name: '보닛 모자 (핑크)', file: 'hat-bonnie-pink.png', price: 50 },
-  { id: 'hat-bonnie-white', slot: 'hat', name: '보닛 모자 (하양)', file: 'hat-bonnie-white.png', price: 50 },
-  { id: 'hat-bonnie-red', slot: 'hat', name: '보닛 모자 (빨강)', file: 'hat-bonnie-red.png', price: 50 },
-  { id: 'hat-cavalier-black', slot: 'hat', name: '카발리에 모자 (검정)', file: 'hat-cavalier-black.png', price: 55 },
-  { id: 'hat-cavalier-purple', slot: 'hat', name: '카발리에 모자 (보라)', file: 'hat-cavalier-purple.png', price: 55 },
+  // --- mouth ---
+  { id: 'mouth-variant04', slot: 'mouth', name: '살짝 미소', value: 'variant04', price: 20 },
+  { id: 'mouth-variant05', slot: 'mouth', name: '활짝 웃음', value: 'variant05', price: 25 },
+  { id: 'mouth-variant09', slot: 'mouth', name: '립스틱 미소', value: 'variant09', price: 25 },
+  { id: 'mouth-variant11', slot: 'mouth', name: '놀란 입', value: 'variant11', price: 20 },
+  { id: 'mouth-variant17', slot: 'mouth', name: '수줍은 미소', value: 'variant17', price: 20 },
+  { id: 'mouth-variant19', slot: 'mouth', name: '차분한 입', value: 'variant19', price: 20 },
+  { id: 'mouth-variant22', slot: 'mouth', name: '함박 웃음', value: 'variant22', price: 25 },
+  { id: 'mouth-variant24', slot: 'mouth', name: '이빨 웃음', value: 'variant24', price: 25 },
+  { id: 'mouth-variant26', slot: 'mouth', name: '방긋 웃음', value: 'variant26', price: 20 },
+  { id: 'mouth-variant28', slot: 'mouth', name: '메롱', value: 'variant28', price: 25 },
+  { id: 'mouth-variant30', slot: 'mouth', name: '활짝 함박웃음', value: 'variant30', price: 25 },
 
-  { id: 'earrings-princess-purple', slot: 'earrings', name: '프린세스 귀걸이 (보라)', file: 'earrings-princess-purple.png', price: 35 },
-  { id: 'earrings-princess-red', slot: 'earrings', name: '프린세스 귀걸이 (빨강)', file: 'earrings-princess-red.png', price: 35 },
-  { id: 'earrings-princess-blue', slot: 'earrings', name: '프린세스 귀걸이 (파랑)', file: 'earrings-princess-blue.png', price: 35 },
-  { id: 'earrings-princess-green', slot: 'earrings', name: '프린세스 귀걸이 (초록)', file: 'earrings-princess-green.png', price: 35 },
-  { id: 'earrings-stud-gold', slot: 'earrings', name: '스터드 귀걸이 (골드)', file: 'earrings-stud-gold.png', price: 35 },
-  { id: 'earrings-stud-silver', slot: 'earrings', name: '스터드 귀걸이 (실버)', file: 'earrings-stud-silver.png', price: 35 },
+  // --- glasses ---
+  { id: 'glasses-variant01', slot: 'glasses', name: '선글라스', value: 'variant01', price: 30 },
+  { id: 'glasses-variant02', slot: 'glasses', name: '동그란 안경', value: 'variant02', price: 30 },
+  { id: 'glasses-variant03', slot: 'glasses', name: '안경 스타일 3', value: 'variant03', price: 30 },
+  { id: 'glasses-variant04', slot: 'glasses', name: '안경 스타일 4', value: 'variant04', price: 30 },
+  { id: 'glasses-variant05', slot: 'glasses', name: '안경 스타일 5', value: 'variant05', price: 30 },
+
+  // --- earrings ---
+  { id: 'earrings-variant01', slot: 'earrings', name: '귀걸이 1', value: 'variant01', price: 25 },
+  { id: 'earrings-variant02', slot: 'earrings', name: '귀걸이 2', value: 'variant02', price: 25 },
+  { id: 'earrings-variant03', slot: 'earrings', name: '귀걸이 3', value: 'variant03', price: 25 },
+  { id: 'earrings-variant04', slot: 'earrings', name: '귀걸이 4', value: 'variant04', price: 25 },
+  { id: 'earrings-variant05', slot: 'earrings', name: '귀걸이 5', value: 'variant05', price: 25 },
+  { id: 'earrings-variant06', slot: 'earrings', name: '귀걸이 6', value: 'variant06', price: 25 },
 ];
 
 export function getCharacterItem(id) {
