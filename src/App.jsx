@@ -11,6 +11,7 @@ import MiscView from './components/MiscView';
 import ApprovalsView from './components/ApprovalsView';
 import HomeView from './components/HomeView';
 import ShopView from './components/ShopView';
+import CharacterShopView from './components/CharacterShopView';
 import SyncPanel from './components/SyncPanel';
 import ProfileGate from './components/ProfileGate';
 import ProfileBadge from './components/ProfileBadge';
@@ -147,6 +148,42 @@ export default function App() {
     }));
   }
 
+  function buyCharacterItem(item) {
+    update((prev) => {
+      const character = prev.character || { owned: {}, equipped: {} };
+      return {
+        ...prev,
+        character: {
+          owned: { ...character.owned, [item.id]: item.price },
+          equipped: { ...character.equipped, [item.slot]: item.id },
+        },
+      };
+    });
+    celebrate();
+  }
+
+  function equipCharacterItem(item) {
+    update((prev) => {
+      const character = prev.character || { owned: {}, equipped: {} };
+      return {
+        ...prev,
+        character: {
+          ...character,
+          equipped: { ...character.equipped, [item.slot]: item.id },
+        },
+      };
+    });
+  }
+
+  function unequipCharacterSlot(slot) {
+    update((prev) => {
+      const character = prev.character || { owned: {}, equipped: {} };
+      const equipped = { ...character.equipped };
+      delete equipped[slot];
+      return { ...prev, character: { ...character, equipped } };
+    });
+  }
+
   const bookActions = {
     onSetRating: setRating,
     onSetTitle: setTitleOverride,
@@ -208,6 +245,17 @@ export default function App() {
             isChild={isChild}
             onBuy={buyCoupon}
             onMarkShared={markPurchaseShared}
+          />
+        )}
+
+        {activeKey === 'character-shop' && (
+          <CharacterShopView
+            catalog={catalog}
+            progress={data}
+            isChild={isChild}
+            onBuy={buyCharacterItem}
+            onEquip={equipCharacterItem}
+            onUnequip={unequipCharacterSlot}
           />
         )}
 

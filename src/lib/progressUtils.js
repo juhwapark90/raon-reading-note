@@ -83,7 +83,20 @@ export function totalPointsEarned(catalog, progress) {
 }
 
 export function pointsSpent(progress) {
-  return (progress.purchases || []).reduce((sum, p) => sum + (p.price || 0), 0);
+  const couponSpend = (progress.purchases || []).reduce((sum, p) => sum + (p.price || 0), 0);
+  const characterSpend = Object.values(progress.character?.owned || {}).reduce(
+    (sum, p) => sum + (p || 0),
+    0
+  );
+  return couponSpend + characterSpend;
+}
+
+export function isCharacterItemOwned(progress, itemId) {
+  return Boolean(progress.character?.owned?.[itemId]);
+}
+
+export function getEquippedCharacterItems(progress) {
+  return progress.character?.equipped || {};
 }
 
 export function walletBalance(catalog, progress) {

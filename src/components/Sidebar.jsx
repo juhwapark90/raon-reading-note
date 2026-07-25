@@ -12,7 +12,10 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
     { key: 'misc', name: '기타', emoji: '🗂️', color: '#898781' },
   ];
 
-  const bottomItems = [{ key: 'shop', name: '상점', emoji: '🛍️', color: '#eda100' }];
+  const bottomItems = [
+    { key: 'shop', name: '상점', emoji: '🛍️', color: '#eda100' },
+    { key: 'character-shop', name: '캐릭터 꾸미기', emoji: '✨', color: '#e87ba4' },
+  ];
 
   function labelFor(key) {
     if (key === 'home') return null;
@@ -27,6 +30,7 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
       return `${read}/${total}`;
     }
     if (key === 'shop') return `${walletBalance(catalog, progress)}P`;
+    if (key === 'character-shop') return null;
     const series = catalog.series.find((s) => s.key === key);
     const { total, read } = countSeriesProgress(series, progress);
     return `${read}/${total}`;

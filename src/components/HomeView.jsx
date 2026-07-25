@@ -6,6 +6,7 @@ import {
   walletBalance,
 } from '../lib/progressUtils';
 import ProgressBar from './ProgressBar';
+import CharacterView from './CharacterView';
 
 export default function HomeView({ catalog, progress, isChild, onNavigate }) {
   const points = totalPointsEarned(catalog, progress);
@@ -56,6 +57,13 @@ export default function HomeView({ catalog, progress, isChild, onNavigate }) {
         <button className="home-stat-card home-stat-card--action" onClick={() => onNavigate('shop')}>
           <div className="home-stat-card__label">용돈 쿠폰 받으러 가기</div>
           <div className="home-stat-card__value">🛍️ 상점</div>
+        </button>
+        <button
+          className="home-stat-card home-stat-card--action home-stat-card--character"
+          onClick={() => onNavigate('character-shop')}
+        >
+          <CharacterView equipped={progress.character?.equipped} size={56} />
+          <div className="home-stat-card__label">캐릭터 꾸미기</div>
         </button>
       </div>
 
