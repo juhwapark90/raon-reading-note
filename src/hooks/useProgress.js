@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import { db, isFirebaseConfigured, ensureSignedIn } from '../lib/firebase';
 import { beginWrite, endWrite } from '../lib/pendingWrites';
@@ -52,9 +52,6 @@ export function useProgress() {
   const [syncStatus, setSyncStatus] = useState(
     !isFirebaseConfigured ? 'local-only' : roomCode ? 'connecting' : 'no-room'
   );
-  const dataRef = useRef(data);
-  dataRef.current = data;
-  const skipPush = useRef(false);
 
   useEffect(() => {
     saveLocal(data);
@@ -85,7 +82,6 @@ export function useProgress() {
             // local timestamp and get silently discarded forever. Trusting
             // Firestore's own commit order removes that failure mode.
             if (snap.exists() && !snap.metadata.hasPendingWrites) {
-              skipPush.current = true;
               setData({ ...emptyData(), ...snap.data() });
             }
             setSyncStatus('synced');
@@ -112,14 +108,13 @@ export function useProgress() {
       setData((prev) => {
         const next = typeof updater === 'function' ? updater(prev) : updater;
         const stamped = { ...next, updatedAt: Date.now() };
-        if (isFirebaseConfigured && roomCode && !skipPush.current) {
+        if (isFirebaseConfigured && roomCode) {
           beginWrite();
           ensureSignedIn()
             .then(() => setDoc(doc(db, 'rooms', roomCode), stamped))
             .catch((err) => console.error('firestore write error', err))
             .finally(() => endWrite());
         }
-        skipPush.current = false;
         return stamped;
       });
     },
