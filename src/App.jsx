@@ -115,10 +115,10 @@ export default function App() {
     }));
   }
 
-  function addMiscBook(title) {
+  function addMiscBook({ title, category, subtitle }) {
     update((prev) => ({
       ...prev,
-      miscBooks: [...(prev.miscBooks || []), { id: `misc-${Date.now()}`, title }],
+      miscBooks: [...(prev.miscBooks || []), { id: `misc-${Date.now()}`, title, category, subtitle }],
     }));
   }
 

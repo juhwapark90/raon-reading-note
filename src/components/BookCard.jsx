@@ -9,6 +9,7 @@ export default function BookCard({
   isChild,
   accent,
   extraTag,
+  subtitle,
   onSetRating,
   onSetTitle,
   onRequestRead,
@@ -103,6 +104,7 @@ export default function BookCard({
         )}
       </div>
       <div className="book-card__title">{effective.title}</div>
+      {subtitle && <div className="book-card__subtitle">{subtitle}</div>}
       <div className="book-card__stars">
         {STARS.map((n) => (
           <button
