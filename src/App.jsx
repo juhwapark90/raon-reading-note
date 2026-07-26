@@ -9,6 +9,7 @@ import AppHeader from './components/AppHeader';
 import SeriesView from './components/SeriesView';
 import RequiredReadingView from './components/RequiredReadingView';
 import MiscView from './components/MiscView';
+import CustomSeriesView from './components/CustomSeriesView';
 import ApprovalsView from './components/ApprovalsView';
 import HomeView from './components/HomeView';
 import ShopHubView from './components/ShopHubView';
@@ -28,6 +29,9 @@ const CONFIRM_CHEERS = [
   '확인 완료! 라온이에게 포인트가 지급됐어요 🎉',
   '잘 확인했어요! 포인트 적립 완료 ✨',
 ];
+
+// Cycled by index when a new custom series is created.
+const CUSTOM_SERIES_COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#4a3aa7', '#0d8a8a'];
 
 let cheerTimer = null;
 
@@ -130,6 +134,49 @@ export default function App() {
     }));
   }
 
+  function addCustomSeries(name, emoji) {
+    update((prev) => {
+      const existing = prev.customSeries || [];
+      const color = CUSTOM_SERIES_COLORS[existing.length % CUSTOM_SERIES_COLORS.length];
+      return {
+        ...prev,
+        customSeries: [...existing, { key: `custom-${Date.now()}`, name, emoji, color }],
+      };
+    });
+  }
+
+  function removeCustomSeries(seriesKey) {
+    update((prev) => {
+      const removedIds = new Set(
+        (prev.customBooks || []).filter((b) => b.seriesKey === seriesKey).map((b) => b.id)
+      );
+      return {
+        ...prev,
+        customSeries: (prev.customSeries || []).filter((s) => s.key !== seriesKey),
+        customBooks: (prev.customBooks || []).filter((b) => b.seriesKey !== seriesKey),
+        books: Object.fromEntries(Object.entries(prev.books).filter(([k]) => !removedIds.has(k))),
+      };
+    });
+  }
+
+  function addCustomSeriesBook(seriesKey, { title, category, subtitle }) {
+    update((prev) => ({
+      ...prev,
+      customBooks: [
+        ...(prev.customBooks || []),
+        { id: `custombook-${Date.now()}`, seriesKey, title, category, subtitle },
+      ],
+    }));
+  }
+
+  function removeCustomSeriesBook(id) {
+    update((prev) => ({
+      ...prev,
+      customBooks: (prev.customBooks || []).filter((b) => b.id !== id),
+      books: Object.fromEntries(Object.entries(prev.books).filter(([k]) => k !== id)),
+    }));
+  }
+
   function buyCoupon(purchase) {
     update((prev) => ({
       ...prev,
@@ -193,6 +240,7 @@ export default function App() {
   };
 
   const activeSeries = catalog.series.find((s) => s.key === activeKey);
+  const activeCustomSeries = (data.customSeries || []).find((s) => s.key === activeKey);
 
   if (!profile) {
     return <ProfileGate onSelect={selectProfile} />;
@@ -207,6 +255,7 @@ export default function App() {
         onSelect={setActiveKey}
         open={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
+        onAddSeries={addCustomSeries}
       />
       <main className="app-main">
         <AppHeader
@@ -273,6 +322,19 @@ export default function App() {
             actions={bookActions}
             onAdd={addMiscBook}
             onRemove={removeMiscBook}
+          />
+        )}
+
+        {activeCustomSeries && (
+          <CustomSeriesView
+            series={activeCustomSeries}
+            progress={data}
+            isChild={isChild}
+            actions={bookActions}
+            onAdd={addCustomSeriesBook}
+            onRemoveBook={removeCustomSeriesBook}
+            onRemoveSeries={removeCustomSeries}
+            onNavigateHome={() => setActiveKey('home')}
           />
         )}
       </main>

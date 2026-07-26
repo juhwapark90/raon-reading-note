@@ -50,6 +50,20 @@ export function countMiscProgress(progress) {
   return { total: books.length, read };
 }
 
+export function getCustomSeriesList(progress) {
+  return progress.customSeries || [];
+}
+
+export function getCustomSeriesBooks(progress, seriesKey) {
+  return (progress.customBooks || []).filter((b) => b.seriesKey === seriesKey);
+}
+
+export function countCustomSeriesProgress(progress, seriesKey) {
+  const books = getCustomSeriesBooks(progress, seriesKey);
+  const readCount = books.filter((b) => isRead(progress, b.id)).length;
+  return { total: books.length, read: readCount };
+}
+
 export function countTotalProgress(catalog, progress) {
   let total = 0;
   let read = 0;
@@ -64,6 +78,11 @@ export function countTotalProgress(catalog, progress) {
   const misc = countMiscProgress(progress);
   total += misc.total;
   read += misc.read;
+  for (const cs of getCustomSeriesList(progress)) {
+    const c = countCustomSeriesProgress(progress, cs.key);
+    total += c.total;
+    read += c.read;
+  }
   return { total, read };
 }
 
@@ -147,6 +166,21 @@ export function getAllPendingBooks(catalog, progress) {
         sectionEmoji: '🗂️',
         pendingDate: getBookState(progress, b.id)?.pendingDate,
       });
+    }
+  }
+
+  for (const cs of getCustomSeriesList(progress)) {
+    for (const b of getCustomSeriesBooks(progress, cs.key)) {
+      if (isPending(progress, b.id)) {
+        results.push({
+          id: b.id,
+          title: b.title,
+          sectionKey: cs.key,
+          sectionName: cs.name,
+          sectionEmoji: cs.emoji,
+          pendingDate: getBookState(progress, b.id)?.pendingDate,
+        });
+      }
     }
   }
 

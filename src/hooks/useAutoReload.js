@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { safeReload } from '../lib/safeReload';
 
 // iOS "Add to Home Screen" apps keep a cached copy running indefinitely and
 // rarely re-fetch index.html on their own. This checks a small version file
@@ -16,7 +17,7 @@ export function useAutoReload() {
         if (!res.ok) return;
         const data = await res.json();
         if (!cancelled && data.version && data.version !== __APP_VERSION__) {
-          window.location.reload();
+          safeReload();
         }
       } catch {
         // offline or blocked - just skip this check

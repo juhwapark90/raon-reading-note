@@ -1,4 +1,11 @@
-import { countMiscProgress, countSeriesProgress, pendingCount, walletBalance } from '../lib/progressUtils';
+import {
+  countCustomSeriesProgress,
+  countMiscProgress,
+  countSeriesProgress,
+  getCustomSeriesList,
+  pendingCount,
+  walletBalance,
+} from '../lib/progressUtils';
 import ProgressBar from './ProgressBar';
 import CharacterView from './CharacterView';
 
@@ -14,6 +21,10 @@ export default function HomeView({ catalog, progress, isChild, totalRead, onNavi
     { key: req.key, name: req.name, emoji: req.emoji, color: req.color, total: req.books.length, read: reqRead },
     ...catalog.series.map((s) => {
       const { total, read } = countSeriesProgress(s, progress);
+      return { key: s.key, name: s.name, emoji: s.emoji, color: s.color, total, read };
+    }),
+    ...getCustomSeriesList(progress).map((s) => {
+      const { total, read } = countCustomSeriesProgress(progress, s.key);
       return { key: s.key, name: s.name, emoji: s.emoji, color: s.color, total, read };
     }),
     { key: 'misc', name: '기타', emoji: '🗂️', color: '#898781', total: misc.total, read: misc.read },

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import { db, isFirebaseConfigured, ensureSignedIn } from '../lib/firebase';
+import { beginWrite, endWrite } from '../lib/pendingWrites';
 
 const LOCAL_KEY = 'raon-reading-progress-v1';
 const ROOM_KEY = 'raon-reading-room-code';
@@ -9,6 +10,8 @@ function emptyData() {
   return {
     books: {},
     miscBooks: [],
+    customSeries: [],
+    customBooks: [],
     purchases: [],
     character: { owned: {}, equipped: {} },
     updatedAt: 0,
@@ -104,11 +107,11 @@ export function useProgress() {
         const next = typeof updater === 'function' ? updater(prev) : updater;
         const stamped = { ...next, updatedAt: Date.now() };
         if (isFirebaseConfigured && roomCode && !skipPush.current) {
-          ensureSignedIn().then(() =>
-            setDoc(doc(db, 'rooms', roomCode), stamped).catch((err) =>
-              console.error('firestore write error', err)
-            )
-          );
+          beginWrite();
+          ensureSignedIn()
+            .then(() => setDoc(doc(db, 'rooms', roomCode), stamped))
+            .catch((err) => console.error('firestore write error', err))
+            .finally(() => endWrite());
         }
         skipPush.current = false;
         return stamped;

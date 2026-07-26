@@ -1,14 +1,29 @@
-import { countSeriesProgress, countMiscProgress, pendingCount, walletBalance } from '../lib/progressUtils';
+import { useState } from 'react';
+import {
+  countSeriesProgress,
+  countMiscProgress,
+  countCustomSeriesProgress,
+  pendingCount,
+  walletBalance,
+} from '../lib/progressUtils';
+import { safeReload } from '../lib/safeReload';
 
-export default function Sidebar({ catalog, progress, activeKey, onSelect, open, onClose }) {
+export default function Sidebar({ catalog, progress, activeKey, onSelect, open, onClose, onAddSeries }) {
+  const [addingSeries, setAddingSeries] = useState(false);
+  const [newSeriesName, setNewSeriesName] = useState('');
+  const [newSeriesEmoji, setNewSeriesEmoji] = useState('');
+
   const topItems = [{ key: 'home', name: '홈', emoji: '🏠', color: '#2a78d6' }];
 
   const pending = pendingCount(catalog, progress);
   const approvalsItem = { key: 'approvals', name: '확인 대기', emoji: '🔔', color: '#d03b3b' };
 
+  const customSeries = progress.customSeries || [];
+
   const listItems = [
     { key: catalog.requiredReading.key, name: catalog.requiredReading.name, emoji: catalog.requiredReading.emoji, color: catalog.requiredReading.color },
     ...catalog.series.map((s) => ({ key: s.key, name: s.name, emoji: s.emoji, color: s.color })),
+    ...customSeries.map((s) => ({ key: s.key, name: s.name, emoji: s.emoji, color: s.color })),
     { key: 'misc', name: '기타', emoji: '🗂️', color: '#898781' },
   ];
 
@@ -28,8 +43,15 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
     }
     if (key === 'shop') return `${walletBalance(catalog, progress)}P`;
     const series = catalog.series.find((s) => s.key === key);
-    const { total, read } = countSeriesProgress(series, progress);
-    return `${read}/${total}`;
+    if (series) {
+      const { total, read } = countSeriesProgress(series, progress);
+      return `${read}/${total}`;
+    }
+    if (customSeries.some((s) => s.key === key)) {
+      const { total, read } = countCustomSeriesProgress(progress, key);
+      return `${read}/${total}`;
+    }
+    return null;
   }
 
   function renderItem(item) {
@@ -43,7 +65,8 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
             if (item.key === 'home') {
               // A full reload, not just a client-side nav - the iPhone
               // home-screen icon otherwise never re-fetches the latest deploy.
-              window.location.reload();
+              // Waits for any in-flight sync write so it can't be dropped.
+              safeReload();
               return;
             }
             onSelect(item.key);
@@ -70,6 +93,43 @@ export default function Sidebar({ catalog, progress, activeKey, onSelect, open, 
         <ul>{[approvalsItem].map(renderItem)}</ul>
         <div className="sidebar__divider" />
         <ul>{listItems.map(renderItem)}</ul>
+
+        {addingSeries ? (
+          <form
+            className="sidebar__add-series-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (!newSeriesName.trim()) return;
+              onAddSeries(newSeriesName.trim(), newSeriesEmoji.trim() || '📚');
+              setNewSeriesName('');
+              setNewSeriesEmoji('');
+              setAddingSeries(false);
+            }}
+          >
+            <input
+              autoFocus
+              placeholder="시리즈 이름"
+              value={newSeriesName}
+              onChange={(e) => setNewSeriesName(e.target.value)}
+            />
+            <input
+              placeholder="이모지(선택)"
+              value={newSeriesEmoji}
+              onChange={(e) => setNewSeriesEmoji(e.target.value)}
+            />
+            <div className="sidebar__add-series-actions">
+              <button type="submit">추가</button>
+              <button type="button" onClick={() => setAddingSeries(false)}>
+                취소
+              </button>
+            </div>
+          </form>
+        ) : (
+          <button className="sidebar__add-series-btn" onClick={() => setAddingSeries(true)}>
+            + 시리즈 추가
+          </button>
+        )}
+
         <div className="sidebar__divider" />
         <ul>{bottomItems.map(renderItem)}</ul>
       </nav>
