@@ -75,12 +75,18 @@ export function useProgress() {
         unsub = onSnapshot(
           doc(db, 'rooms', roomCode),
           (snap) => {
-            if (snap.exists()) {
-              const remote = snap.data();
-              if ((remote.updatedAt || 0) >= (dataRef.current.updatedAt || 0)) {
-                skipPush.current = true;
-                setData({ ...emptyData(), ...remote });
-              }
+            // Only apply snapshots Firestore has actually committed on the
+            // server (hasPendingWrites is true for the echo of our own
+            // in-flight write, which is already reflected in local state).
+            // Comparing device-clock timestamps here used to decide whether
+            // to accept a remote update - but two phones' clocks are never
+            // perfectly in sync, so a genuinely newer confirm from one
+            // device could look "older" than the other device's own last
+            // local timestamp and get silently discarded forever. Trusting
+            // Firestore's own commit order removes that failure mode.
+            if (snap.exists() && !snap.metadata.hasPendingWrites) {
+              skipPush.current = true;
+              setData({ ...emptyData(), ...snap.data() });
             }
             setSyncStatus('synced');
           },
