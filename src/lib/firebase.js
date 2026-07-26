@@ -1,5 +1,5 @@
 import { initializeApp, getApps } from 'firebase/app';
-import { getAuth, signInAnonymously } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, signInAnonymously } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const config = {
@@ -25,11 +25,34 @@ if (isFirebaseConfigured) {
 
 let signInPromise = null;
 
+// On every fresh page load (including the forced reloads useAutoReload does
+// for iOS home-screen installs), Firebase Auth restores a previously signed-in
+// anonymous session from local storage, but that restore is asynchronous -
+// checking auth.currentUser immediately after getAuth() almost always sees
+// null and would otherwise trigger a needless network round-trip to sign in
+// again. Waiting for the first onAuthStateChanged event picks up the restored
+// session (no network call) whenever one exists, so Firestore reconnects as
+// soon as the local session is ready instead of after an extra auth request.
 export function ensureSignedIn() {
   if (!isFirebaseConfigured) return Promise.resolve(null);
   if (auth.currentUser) return Promise.resolve(auth.currentUser);
   if (!signInPromise) {
-    signInPromise = signInAnonymously(auth).then(() => auth.currentUser);
+    signInPromise = new Promise((resolve, reject) => {
+      const unsubscribe = onAuthStateChanged(
+        auth,
+        (user) => {
+          unsubscribe();
+          if (user) {
+            resolve(user);
+          } else {
+            signInAnonymously(auth)
+              .then((cred) => resolve(cred.user))
+              .catch(reject);
+          }
+        },
+        reject
+      );
+    });
   }
   return signInPromise;
 }
