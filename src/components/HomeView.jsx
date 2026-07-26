@@ -4,13 +4,11 @@ import {
   countSeriesProgress,
   getCustomSeriesList,
   pendingCount,
-  walletBalance,
 } from '../lib/progressUtils';
 import ProgressBar from './ProgressBar';
 import CharacterView from './CharacterView';
 
 export default function HomeView({ catalog, progress, isChild, totalRead, onNavigate }) {
-  const balance = walletBalance(catalog, progress);
   const pending = pendingCount(catalog, progress);
 
   const req = catalog.requiredReading;
@@ -49,10 +47,6 @@ export default function HomeView({ catalog, progress, isChild, totalRead, onNavi
           지금까지 총 <span className="home-hero__count">{totalRead}</span>권의 책을 읽었어요.
         </div>
       </div>
-
-      <button className="home-point-btn" onClick={() => onNavigate('shop')}>
-        💰 {balance}P
-      </button>
 
       <h3 className="home-section-title">시리즈별 진행률</h3>
       <div className="home-grid">

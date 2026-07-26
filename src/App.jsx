@@ -3,7 +3,7 @@ import catalog from './data/catalog.json';
 import { useProgress } from './hooks/useProgress';
 import { useProfile } from './hooks/useProfile';
 import { useAutoReload } from './hooks/useAutoReload';
-import { countTotalProgress, todayStr } from './lib/progressUtils';
+import { countTotalProgress, todayStr, walletBalance } from './lib/progressUtils';
 import Sidebar from './components/Sidebar';
 import AppHeader from './components/AppHeader';
 import SeriesView from './components/SeriesView';
@@ -44,6 +44,7 @@ export default function App() {
   const [toastMsg, setToastMsg] = useState('');
 
   const { read } = useMemo(() => countTotalProgress(catalog, data), [data]);
+  const pointBalance = useMemo(() => walletBalance(catalog, data), [data]);
 
   function celebrate(pool = CHEERS) {
     const msg = pool[Math.floor(Math.random() * pool.length)];
@@ -266,6 +267,8 @@ export default function App() {
           roomCode={roomCode}
           onJoin={joinRoom}
           onLeave={leaveRoom}
+          pointBalance={pointBalance}
+          onPointsClick={() => setActiveKey('shop')}
         />
 
         {activeKey === 'home' && (
