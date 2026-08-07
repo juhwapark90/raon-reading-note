@@ -8,6 +8,7 @@ export default function ShopHubView({
   isChild,
   onBuyCoupon,
   onMarkShared,
+  onRefundCoupon,
   onBuyCharacter,
   onEquipCharacter,
   onUnequipCharacter,
@@ -38,6 +39,7 @@ export default function ShopHubView({
           isChild={isChild}
           onBuy={onBuyCoupon}
           onMarkShared={onMarkShared}
+          onRefund={onRefundCoupon}
         />
       ) : (
         <CharacterShopView

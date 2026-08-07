@@ -4,7 +4,7 @@ import { walletBalance } from '../lib/progressUtils';
 import { todayStr } from '../lib/progressUtils';
 import CouponPopup from './CouponPopup';
 
-export default function ShopView({ catalog, progress, isChild, onBuy, onMarkShared }) {
+export default function ShopView({ catalog, progress, isChild, onBuy, onMarkShared, onRefund }) {
   const [popupPurchase, setPopupPurchase] = useState(null);
   const balance = walletBalance(catalog, progress);
   const purchases = [...(progress.purchases || [])].reverse();
@@ -71,9 +71,21 @@ export default function ShopView({ catalog, progress, isChild, onBuy, onMarkShar
                 {p.shared ? (
                   <span className="shop-history__shared">공유 완료 ✅</span>
                 ) : (
-                  <button className="shop-history__share-btn" onClick={() => setPopupPurchase(p)}>
-                    💬 공유하기
-                  </button>
+                  <span className="shop-history__actions">
+                    <button className="shop-history__share-btn" onClick={() => setPopupPurchase(p)}>
+                      💬 공유하기
+                    </button>
+                    <button
+                      className="shop-history__refund-btn"
+                      onClick={() => {
+                        if (window.confirm(`"${p.name}"을(를) 환불하고 ${p.price}P를 돌려받을까요?`)) {
+                          onRefund(p.id);
+                        }
+                      }}
+                    >
+                      되돌리기
+                    </button>
+                  </span>
                 )}
               </div>
             ))}

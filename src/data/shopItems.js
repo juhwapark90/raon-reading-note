@@ -3,6 +3,7 @@
 // physical-reward shop.
 export const COUPON_ITEMS = [
   { id: 'coupon-1000', name: '용돈 1,000원 쿠폰', icon: '🎟️', price: 100, amount: 1000 },
-  { id: 'coupon-3500', name: '용돈 3,500원 쿠폰', icon: '🎫', price: 300, amount: 3500 },
+  { id: 'coupon-5000', name: '용돈 5,000원 쿠폰', icon: '🎫', price: 400, amount: 5000 },
   { id: 'coupon-8000', name: '용돈 8,000원 쿠폰', icon: '💵', price: 600, amount: 8000 },
+  { id: 'coupon-10000', name: '용돈 10,000원 쿠폰', icon: '💰', price: 750, amount: 10000 },
 ];

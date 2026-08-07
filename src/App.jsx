@@ -195,6 +195,13 @@ export default function App() {
     }));
   }
 
+  function refundPurchase(purchaseId) {
+    update((prev) => ({
+      ...prev,
+      purchases: (prev.purchases || []).filter((p) => p.id !== purchaseId),
+    }));
+  }
+
   function buyCharacterItem(item) {
     update((prev) => {
       const character = prev.character || { owned: {}, equipped: {} };
@@ -299,6 +306,7 @@ export default function App() {
             isChild={isChild}
             onBuyCoupon={buyCoupon}
             onMarkShared={markPurchaseShared}
+            onRefundCoupon={refundPurchase}
             onBuyCharacter={buyCharacterItem}
             onEquipCharacter={equipCharacterItem}
             onUnequipCharacter={unequipCharacterSlot}
