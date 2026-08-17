@@ -3424,6 +3424,368 @@
           "owned": true
         }
       ]
+    },
+    {
+      "key": "science-flip",
+      "name": "꼬마과학뒤집기",
+      "emoji": "🔬",
+      "color": "#0277bd",
+      "books": [
+        {
+          "id": "science-flip-1",
+          "number": 1,
+          "title": "인체와 건강 - 소중한 뇌",
+          "owned": true
+        },
+        {
+          "id": "science-flip-2",
+          "number": 2,
+          "title": "인체와 건강 - 뼈와 근육",
+          "owned": true
+        },
+        {
+          "id": "science-flip-3",
+          "number": 3,
+          "title": "인체와 건강 - 피와 순환",
+          "owned": true
+        },
+        {
+          "id": "science-flip-4",
+          "number": 4,
+          "title": "인체와 건강 - 호흡",
+          "owned": true
+        },
+        {
+          "id": "science-flip-5",
+          "number": 5,
+          "title": "인체와 건강 - 소화와 배설",
+          "owned": true
+        },
+        {
+          "id": "science-flip-6",
+          "number": 6,
+          "title": "인체와 건강 - 탄생과 성장",
+          "owned": true
+        },
+        {
+          "id": "science-flip-7",
+          "number": 7,
+          "title": "인체와 건강 - 건강과 바이러스",
+          "owned": true
+        },
+        {
+          "id": "science-flip-8",
+          "number": 8,
+          "title": "동물과 식물 - 동물의 분류",
+          "owned": true
+        },
+        {
+          "id": "science-flip-9",
+          "number": 9,
+          "title": "동물과 식물 - 동물의 한살이",
+          "owned": true
+        },
+        {
+          "id": "science-flip-10",
+          "number": 10,
+          "title": "동물과 식물 - 생태계와 먹이 사슬",
+          "owned": true
+        },
+        {
+          "id": "science-flip-11",
+          "number": 11,
+          "title": "동물과 식물 - 서식지와 환경",
+          "owned": true
+        },
+        {
+          "id": "science-flip-12",
+          "number": 12,
+          "title": "동물과 식물 - 곤충",
+          "owned": true
+        },
+        {
+          "id": "science-flip-13",
+          "number": 13,
+          "title": "동물과 식물 - 집 짓기와 의사소통",
+          "owned": true
+        },
+        {
+          "id": "science-flip-14",
+          "number": 14,
+          "title": "동물과 식물 - 각양각색 신기한 동물",
+          "owned": true
+        },
+        {
+          "id": "science-flip-15",
+          "number": 15,
+          "title": "동물과 식물 - 식물의 한살이",
+          "owned": true
+        },
+        {
+          "id": "science-flip-16",
+          "number": 16,
+          "title": "동물과 식물 - 식물의 구조와 기능",
+          "owned": true
+        },
+        {
+          "id": "science-flip-17",
+          "number": 17,
+          "title": "동물과 식물 - 다양한 생물과 우리 생활",
+          "owned": true
+        },
+        {
+          "id": "science-flip-18",
+          "number": 18,
+          "title": "물질과 변화 - 물체와 물질",
+          "owned": true
+        },
+        {
+          "id": "science-flip-19",
+          "number": 19,
+          "title": "물질과 변화 - 물질의 상태",
+          "owned": true
+        },
+        {
+          "id": "science-flip-20",
+          "number": 20,
+          "title": "물질과 변화 - 물질의 상태 변화",
+          "owned": true
+        },
+        {
+          "id": "science-flip-21",
+          "number": 21,
+          "title": "물질과 변화 - 물의 순환",
+          "owned": true
+        },
+        {
+          "id": "science-flip-22",
+          "number": 22,
+          "title": "물질과 변화 - 여러 가지 기체",
+          "owned": true
+        },
+        {
+          "id": "science-flip-23",
+          "number": 23,
+          "title": "물질과 변화 - 용해와 용액",
+          "owned": true
+        },
+        {
+          "id": "science-flip-24",
+          "number": 24,
+          "title": "물질과 변화 - 산과 염기",
+          "owned": true
+        },
+        {
+          "id": "science-flip-25",
+          "number": 25,
+          "title": "물질과 변화 - 혼합물의 분리",
+          "owned": true
+        },
+        {
+          "id": "science-flip-26",
+          "number": 26,
+          "title": "힘과 에너지 - 물체의 무게",
+          "owned": true
+        },
+        {
+          "id": "science-flip-27",
+          "number": 27,
+          "title": "힘과 에너지 - 물체의 운동",
+          "owned": true
+        },
+        {
+          "id": "science-flip-28",
+          "number": 28,
+          "title": "힘과 에너지 - 중력",
+          "owned": true
+        },
+        {
+          "id": "science-flip-29",
+          "number": 29,
+          "title": "힘과 에너지 - 여러 가지 힘",
+          "owned": true
+        },
+        {
+          "id": "science-flip-30",
+          "number": 30,
+          "title": "힘과 에너지 - 소리의 성질",
+          "owned": true
+        },
+        {
+          "id": "science-flip-31",
+          "number": 31,
+          "title": "힘과 에너지 - 빛과 렌즈",
+          "owned": true
+        },
+        {
+          "id": "science-flip-32",
+          "number": 32,
+          "title": "힘과 에너지 - 온도와 열",
+          "owned": true
+        },
+        {
+          "id": "science-flip-33",
+          "number": 33,
+          "title": "힘과 에너지 - 연소와 소화",
+          "owned": true
+        },
+        {
+          "id": "science-flip-34",
+          "number": 34,
+          "title": "힘과 에너지 - 자석의 이용",
+          "owned": true
+        },
+        {
+          "id": "science-flip-35",
+          "number": 35,
+          "title": "힘과 에너지 - 전기의 이용",
+          "owned": true
+        },
+        {
+          "id": "science-flip-36",
+          "number": 36,
+          "title": "힘과 에너지 - 에너지와 생활",
+          "owned": true
+        },
+        {
+          "id": "science-flip-37",
+          "number": 37,
+          "title": "우주와 지구 - 우주와 외계인",
+          "owned": true
+        },
+        {
+          "id": "science-flip-38",
+          "number": 38,
+          "title": "우주와 지구 - 태양계와 별",
+          "owned": true
+        },
+        {
+          "id": "science-flip-39",
+          "number": 39,
+          "title": "우주와 지구 - 별자리",
+          "owned": true
+        },
+        {
+          "id": "science-flip-40",
+          "number": 40,
+          "title": "우주와 지구 - 지구의 모습",
+          "owned": true
+        },
+        {
+          "id": "science-flip-41",
+          "number": 41,
+          "title": "우주와 지구 - 지구와 달의 운동",
+          "owned": true
+        },
+        {
+          "id": "science-flip-42",
+          "number": 42,
+          "title": "우주와 지구 - 지표의 변화",
+          "owned": true
+        },
+        {
+          "id": "science-flip-43",
+          "number": 43,
+          "title": "우주와 지구 - 화산",
+          "owned": true
+        },
+        {
+          "id": "science-flip-44",
+          "number": 44,
+          "title": "우주와 지구 - 지진",
+          "owned": true
+        },
+        {
+          "id": "science-flip-45",
+          "number": 45,
+          "title": "우주와 지구 - 계절의 변화",
+          "owned": true
+        },
+        {
+          "id": "science-flip-46",
+          "number": 46,
+          "title": "우주와 지구 - 날씨와 우리 생활",
+          "owned": true
+        },
+        {
+          "id": "science-flip-47",
+          "number": 47,
+          "title": "우주와 지구 - 환경의 소중함",
+          "owned": true
+        },
+        {
+          "id": "science-flip-48",
+          "number": 48,
+          "title": "과학과 첨단 - 과학자처럼 관찰하기",
+          "owned": true
+        },
+        {
+          "id": "science-flip-49",
+          "number": 49,
+          "title": "과학과 첨단 - 과학자처럼 분류하기",
+          "owned": true
+        },
+        {
+          "id": "science-flip-50",
+          "number": 50,
+          "title": "과학과 첨단 - 과학자처럼 탐구하기",
+          "owned": true
+        },
+        {
+          "id": "science-flip-51",
+          "number": 51,
+          "title": "과학과 첨단 - 로봇",
+          "owned": true
+        },
+        {
+          "id": "science-flip-52",
+          "number": 52,
+          "title": "과학과 첨단 - 통신",
+          "owned": true
+        },
+        {
+          "id": "science-flip-53",
+          "number": 53,
+          "title": "과학과 첨단 - 코딩",
+          "owned": true
+        },
+        {
+          "id": "science-flip-54",
+          "number": 54,
+          "title": "과학과 첨단 - 유전과 진화",
+          "owned": true
+        },
+        {
+          "id": "science-flip-55",
+          "number": 55,
+          "title": "과학과 첨단 - 인공 지능",
+          "owned": true
+        },
+        {
+          "id": "science-flip-56",
+          "number": 56,
+          "title": "과학과 첨단 - 신소재와 첨단 의학",
+          "owned": true
+        },
+        {
+          "id": "science-flip-57",
+          "number": 57,
+          "title": "과학과 첨단 - 스포츠와 과학",
+          "owned": true
+        },
+        {
+          "id": "science-flip-58",
+          "number": 58,
+          "title": "과학과 첨단 - 전통 과학",
+          "owned": true
+        },
+        {
+          "id": "science-flip-59",
+          "number": 59,
+          "title": "과학과 첨단 - 미래 세계",
+          "owned": true
+        }
+      ]
     }
   ],
   "requiredReading": {
