@@ -3786,6 +3786,176 @@
           "owned": true
         }
       ]
+    },
+    {
+      "key": "read-and-use",
+      "name": "읽으면서 바로써먹는",
+      "emoji": "🧩",
+      "color": "#9c27b0",
+      "books": [
+        {
+          "id": "read-and-use-1",
+          "number": 1,
+          "title": "읽으면서 바로 써먹는 어린이 퀴즈",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-2",
+          "number": 2,
+          "title": "읽으면서 바로 써먹는 어린이 수수께끼",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-3",
+          "number": 3,
+          "title": "읽으면서 바로 써먹는 어린이 세계사 퀴즈 1",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-4",
+          "number": 4,
+          "title": "읽으면서 바로 써먹는 어린이 속담",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-5",
+          "number": 5,
+          "title": "읽으면서 바로 써먹는 어린이 OX 퀴즈",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-6",
+          "number": 6,
+          "title": "읽으면서 바로 써먹는 어린이 수수께끼 공포특급",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-7",
+          "number": 7,
+          "title": "읽으면서 바로 써먹는 어린이 세계사 퀴즈 2",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-8",
+          "number": 8,
+          "title": "읽으면서 바로 써먹는 어린이 속담 (바이러스편)",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-9",
+          "number": 9,
+          "title": "읽으면서 바로 해보는 어린이 게임",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-10",
+          "number": 10,
+          "title": "읽으면서 바로 써먹는 어린이 맞춤법",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-11",
+          "number": 11,
+          "title": "읽으면서 바로 써먹는 어린이 한국사 퀴즈 1",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-12",
+          "number": 12,
+          "title": "읽으면서 바로 써먹는 어린이 관용구",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-13",
+          "number": 13,
+          "title": "읽으면서 바로 써먹는 어린이 스도쿠",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-14",
+          "number": 14,
+          "title": "읽으면서 바로 써먹는 어린이 맞춤법 행성",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-15",
+          "number": 15,
+          "title": "읽으면서 바로 써먹는 어린이 한국사 퀴즈 2",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-16",
+          "number": 16,
+          "title": "읽으면서 바로 써먹는 어린이 신체 관용구",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-17",
+          "number": 17,
+          "title": "읽으면서 바로 써먹는 어린이 공포의 수학 퀴즈 1",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-18",
+          "number": 18,
+          "title": "읽으면서 바로 써먹는 어린이 영단어",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-19",
+          "number": 19,
+          "title": "읽으면서 바로 써먹는 어린이 사자소학",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-20",
+          "number": 20,
+          "title": "읽으면서 바로 써먹는 어린이 고사성어",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-21",
+          "number": 21,
+          "title": "읽으면서 바로 써먹는 어린이 공포의 수학 퀴즈 2",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-22",
+          "number": 22,
+          "title": "읽으면서 바로 써먹는 어린이 급수 한자 8·7·6급",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-23",
+          "number": 23,
+          "title": "읽으면서 바로 써먹는 어린이 명심보감",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-24",
+          "number": 24,
+          "title": "읽으면서 바로 써먹는 어린이 사자성어",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-25",
+          "number": 25,
+          "title": "읽으면서 바로 써먹는 어린이 초등 교과 어휘",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-26",
+          "number": 26,
+          "title": "읽으면서 바로 써먹는 어린이 감정 표현",
+          "owned": true
+        },
+        {
+          "id": "read-and-use-27",
+          "number": 27,
+          "title": "읽으면서 바로 써먹는 어린이 세계 여행",
+          "owned": true
+        }
+      ]
     }
   ],
   "requiredReading": {
